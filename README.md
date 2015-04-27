@@ -1,2 +1,2 @@
-# Paws
-Time 4 Paws
+# SoNaughtyButNice
+So Naughty But Nice
