@@ -1,4 +1,4 @@
-<footer class=" footer__wrapper">
+	<footer class=" footer__wrapper">
 	<div class="footer">
 		<section class="row">
 		    <a class="logo__text--footer" href="/recipes">Where real food comes to life</a>
@@ -11,7 +11,7 @@
 				<p class="footer__blurb">SoNaughtyButNice.com is based in Melbourne! We invite you to indulge, satisfy your sweet tooth and to discover the benefits of the ingredients we use, to make our healthy desserts unique and amazing =)</p>
 			</div>
 			<div class="columns small-12 medium-6">
-				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+				<!-- Go to www.addthis.com/dashboard to customize your tools-->
 				<div class="addthis_horizontal_follow_toolbox"></div>
 				<div class="footer__links">
 					<h4 class=" footer__links--heading">Contact Us</h4>
@@ -24,9 +24,9 @@
 			</div>
 
 		</section>	
-	</div>
+	</div> 
 	<div class="bottom__section__footer">
-		<section class="row">
+		<section class="row"> 
 			<div class="columns small-6 medium-4 end">
 				<p>disclaimer</p>
 			</div>

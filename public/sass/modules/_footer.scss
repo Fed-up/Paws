@@ -1,6 +1,8 @@
 /*==== Footer ======= */
-.footer__wrapper {
-  margin-top: 4rem; }
+.footer__wrapper .push{
+  /*margin-top: 4rem; */
+    height: 155px; /* .push must be the same height as .footer */
+}
 
 .footer {
   position: relative;

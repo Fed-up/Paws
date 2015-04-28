@@ -3096,11 +3096,13 @@ ul, li {
   margin-bottom: 1rem;
   color: #12cdb2; }
 
-/* line 1, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 video#bgvid {
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  position: static;
+  /*top: -2.5;*/
+  /*right: 0; */
+  /*bottom: 0;*/
+  margin-top: -2.5rem;
   min-width: 100%;
   min-height: 100%;
   width: auto;
@@ -3108,6 +3110,16 @@ video#bgvid {
   z-index: -100;
   background: url(polina.jpg) no-repeat;
   background-size: cover; }
+
+/*@media only screen and (max-width: 480px) {
+	body.showPanel video#bgvid{
+		display:none;
+	}
+}*/
+/* line 24, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+.section__white--homepage {
+  background-color: #fff;
+  padding: 5rem; }
 
 /* line 1, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .panel--right {
@@ -3118,9 +3130,14 @@ video#bgvid {
   top: 0;
   right: 0;
   background-color: #BAD38D;
-  padding-top: 2.5rem; }
+  padding-top: 6rem; }
 
-/* line 11, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
+@media only screen and (max-width: 761px) {
+  /* line 13, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
+  body.showPanel .panel--right {
+    z-index: 1; } }
+
+/* line 19, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 body.showPanel .content-slot {
   -webkit-transform: translateX(-18rem);
   -moz-transform: translateX(-18rem);
@@ -3128,7 +3145,7 @@ body.showPanel .content-slot {
   -o-transform: translateX(-18rem);
   transform: translateX(-18rem); }
 
-/* line 20, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
+/* line 28, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .navTab_active {
   background-color: #BAD38D;
   color: #fff;
@@ -3139,10 +3156,12 @@ body.showPanel .content-slot {
 /*@import "modules/collections";*/
 /*==== Footer ======= */
 /* line 2, C:/GitHub/Paws/public/sass/modules/_footer.scss */
-.footer__wrapper {
-  margin-top: 4rem; }
+.footer__wrapper .push {
+  /*margin-top: 4rem; */
+  height: 155px;
+  /* .push must be the same height as .footer */ }
 
-/* line 5, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 7, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer {
   position: relative;
   left: 0;
@@ -3154,14 +3173,14 @@ body.showPanel .content-slot {
   border-bottom: 1px solid #12cdb2;
   text-align: center; }
 
-/* line 16, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 18, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .addthis_horizontal_follow_toolbox {
   margin-top: 0.5rem;
   right: 0.5rem;
   position: absolute;
   margin-right: 10%; }
 
-/* line 22, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 24, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .logo__image--footer {
   position: absolute;
   bottom: -0.75rem;
@@ -3173,11 +3192,11 @@ body.showPanel .content-slot {
   background-size: contain; }
 
 @media only screen and (min-width: 768px) {
-  /* line 32, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+  /* line 34, C:/GitHub/Paws/public/sass/modules/_footer.scss */
   .logo__image--footer {
     bottom: -0.77rem; } }
 
-/* line 35, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 37, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .logo__text--footer {
   font-size: 0.83rem;
   display: block;
@@ -3188,18 +3207,18 @@ body.showPanel .content-slot {
   text-align: right; }
 
 @media only screen and (min-width: 481px) {
-  /* line 44, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+  /* line 46, C:/GitHub/Paws/public/sass/modules/_footer.scss */
   .logo__text--footer {
     margin: 0px;
     text-align: center;
     font-size: 1rem; } }
 
-/* line 50, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 52, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .logo__text--footer:hover, .logo__text--footer:active {
   color: #343434; }
 
 /* line 68, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 56, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 58, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer__links {
   display: block;
   width: 80%;
@@ -3211,7 +3230,7 @@ body.showPanel .content-slot {
   margin-top: 4rem; }
 
 @media only screen and (min-width: 481px) {
-  /* line 66, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+  /* line 68, C:/GitHub/Paws/public/sass/modules/_footer.scss */
   .footer__links {
     width: 80%;
     margin: auto;
@@ -3219,25 +3238,25 @@ body.showPanel .content-slot {
     margin-top: 3.5rem; } }
 
 /* line 90, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 73, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 75, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer__links--heading {
   padding-bottom: 0.2rem;
   border-bottom: solid 1px;
   text-align: center; }
 
 /* line 100, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 80, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 82, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer__links--text {
   padding: 0.5rem;
   font-style: italic; }
 
 /* line 106, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 85, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 87, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .top__section__footer {
   background-color: #a8d5ce; }
 
 /* line 115, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 90, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 92, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .bottom__section__footer {
   position: relative;
   background-color: #343434;
@@ -3248,7 +3267,7 @@ body.showPanel .content-slot {
   padding: 0.3rem; }
 
 /* line 125, C:/webroot/lcsnbn/sass/modules/footer */
-/* line 100, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+/* line 102, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer__blurb {
   margin: 2rem;
   font-style: italic; }
@@ -3263,20 +3282,34 @@ body.showPanel .content-slot {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #8fd2c8;
-  height: 2.5rem;
+  /*background: $main_color;*/
+  background: url(/images/paws/sborder.png) no-repeat 0 0;
+  height: 6rem;
   z-index: 2;
   width: 100%;
   line-height: 2.5rem;
   padding-left: 1rem;
-  border-bottom: 1px solid #12cdb2; }
+  /*border-bottom: 1px solid $main_dark; */ }
 
 @media only screen and (min-width: 768px) {
-  /* line 19, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  /* line 21, C:/GitHub/Paws/public/sass/modules/_header.scss */
   .header {
-    text-align: center; } }
+    text-align: center;
+    background: url(/images/paws/mborder.png) no-repeat 0 0; } }
 
-/* line 22, C:/GitHub/Paws/public/sass/modules/_header.scss */
+@media only screen and (min-width: 961px) {
+  /* line 28, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  .header {
+    text-align: center;
+    background: url(/images/paws/lborder.png) no-repeat 0 0; } }
+
+@media only screen and (min-width: 1351px) {
+  /* line 35, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  .header {
+    text-align: center;
+    background: url(/images/paws/xlborder.png) no-repeat 0 0; } }
+
+/* line 47, C:/GitHub/Paws/public/sass/modules/_header.scss */
 .logo__text {
   font-size: 1rem;
   color: #fff;
@@ -3284,38 +3317,37 @@ body.showPanel .content-slot {
   font-weight: bold; }
 
 @media only screen and (min-width: 768px) {
-  /* line 28, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  /* line 53, C:/GitHub/Paws/public/sass/modules/_header.scss */
   .logo__text {
     margin: 0px;
     text-align: center; } }
 
-/* line 33, C:/GitHub/Paws/public/sass/modules/_header.scss */
+/* line 58, C:/GitHub/Paws/public/sass/modules/_header.scss */
 .logo__image {
   position: absolute;
-  bottom: -0.75rem;
+  top: 0.6rem;
   right: 10px;
-  width: 4rem;
+  width: 6rem;
   color: #fff;
-  height: 4rem;
-  background: url(/images/site/logo.png) no-repeat 0 0;
+  height: 6rem;
+  background: url(/images/paws/logo200.png) no-repeat 0 0;
   background-size: contain; }
 
-@media only screen and (min-width: 768px) {
-  /* line 43, C:/GitHub/Paws/public/sass/modules/_header.scss */
-  .logo__image {
-    bottom: -0.77rem; } }
+/* line 68, C:/GitHub/Paws/public/sass/modules/_header.scss */
+.logo__image {
+  /*bottom: -0.77rem;*/ }
 
 @media only screen and (max-width: 480px) {
-  /* line 47, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  /* line 73, C:/GitHub/Paws/public/sass/modules/_header.scss */
   .menu__image {
     display: none; } }
 
 @media only screen and (min-width: 481px) {
-  /* line 50, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  /* line 77, C:/GitHub/Paws/public/sass/modules/_header.scss */
   .menu__image {
     position: absolute;
-    bottom: -1.75rem;
-    right: 5rem;
+    top: 1.75rem;
+    right: 7rem;
     width: 5.5rem;
     color: #fff;
     height: 4rem;
@@ -3323,9 +3355,9 @@ body.showPanel .content-slot {
     background-size: contain; } }
 
 @media only screen and (min-width: 768px) {
-  /* line 60, C:/GitHub/Paws/public/sass/modules/_header.scss */
+  /* line 87, C:/GitHub/Paws/public/sass/modules/_header.scss */
   .menu__image {
-    bottom: -1.77rem; } }
+    top: 1.75rem; } }
 
 /*End Header*/
 /*@import "modules/ingredients";*/

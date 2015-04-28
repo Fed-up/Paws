@@ -27,7 +27,7 @@
 
     <div class="content-slot">
       @yield('content')
-      <div class="footer__push"></div>
+      <!-- <div class="footer__push"></div> -->
       @include('public.footer') 
     </div>
 
@@ -39,40 +39,14 @@
       id="panel--right" 
       class="panel--right"> <!-- //panel -->
         <div id="navigation" class="">
-          
-          @if (Auth::check())
-              
-          @else
-             {{ Form::open(array('url' => 'login', 'class' => 'form-signin form-signin--swipe')) }}
-              <a href="/signup" class="side__member__button">Become a Member</a> 
-              <h3 class="side__login__header">Join Us Today</h3> 
-
-              <div class="form__input--side--login form__input--side--login--swipe">
-                  {{ Form::label('email', 'Email: ', array('class' => 'input__name--white')) }}
-                  {{ Form::email('email', '', array('placeholder'=>'Email', 'class'=>'form-control' ) ) }}
-              </div>
-              <div class="form__input--side--login form__input--side--login--swipe">
-                  {{ Form::label('password', 'Password: ', array('class' => 'input__name--white')) }}
-                  {{ Form::password('password', array('placeholder'=>'Password', 'class'=>'form-control' ) ) }}
-              </div>
-              
-              {{ Form::submit('Login', array('class' => 'side__login__button--swipe')) }}
-              
-            {{ Form::close() }}
-          @endif 
-
-
-
-            
             <nav class="">
-                <a href="/" class="{{((Request::segment(0) === '')? 'side--nav navTab_active ' : 'side--nav')}}">Home</a>
+                
                 <!-- <a class="side--nav" href="/">{{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile') : HTML::link('profile', 'Profile'))) }}</a> -->
                 {{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile', array('class' => 'side--nav')) : HTML::link('profile', 'Profile', array('class' => 'side--nav')))) }}
-                <a class="{{((Request::segment(1) === 'collections')? 'side--nav navTab_active' : 'side--nav')}}" href="/collections">Collections</a>
-                <a class="{{((Request::segment(1) === 'recipes')? 'side--nav navTab_active' : 'side--nav')}}" href="/recipes">@if(Auth::check())@if(Auth::user()->user_type != 'B2B')Recipes @else Nutritents @endif @else Recipes @endif</a>
-                <a class="{{((Request::segment(1) === 'ingredients')? 'side--nav navTab_active' : 'side--nav')}}" href="/ingredients">Ingredients</a>
-                <a class="{{((Request::segment(1) === 'events')? 'side--nav navTab_active' : 'side--nav')}}" href="/events">Events</a>
-                <a class="{{((Request::segment(1) === 'catering')? 'side--nav navTab_active' : 'side--nav')}}" href="/catering">Catering</a>
+                <a class="{{((Request::segment(1) === 'collections')? 'side--nav navTab_active' : 'side--nav')}}" href="/collections">Home</a>
+                <a class="{{((Request::segment(1) === 'recipes')? 'side--nav navTab_active' : 'side--nav')}}" href="/recipes">Our Vision</a>
+                <a class="{{((Request::segment(1) === 'ingredients')? 'side--nav navTab_active' : 'side--nav')}}" href="/ingredients">About Us</a>
+                <a class="{{((Request::segment(1) === 'events')? 'side--nav navTab_active' : 'side--nav')}}" href="/events">Sign Up</a>
             </nav>
         </div>
 
