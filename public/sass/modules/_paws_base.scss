@@ -1,4 +1,7 @@
 
+*:focus {
+    outline: 0;
+}
 
 video#bgvid {
 	position: static; 
@@ -11,7 +14,7 @@ video#bgvid {
 	width: auto; 
 	height: auto; 
 	z-index: -100;
-	background: url(polina.jpg) no-repeat;
+	background: url(/images/paws/videopic.jpg) no-repeat;
 	background-size: cover;
 }
 
@@ -22,27 +25,56 @@ video#bgvid {
 }*/
 .section__white--form{
 	  position: absolute;
-	  top: 20rem;
+	  top: 9rem;
 	  /* background-color: #fff; */
 	  padding: 1rem;
 	  /* width: 100%; */
 	  /* border: 1px solid #e0e0e0; */
 	  color: #fff;
-  	@media #{$small-only} { 
-  		padding: 0.2rem;
-  		top: 11rem;
-  		/*background-color: red;*/
+
+	@media #{$large-only} { 
+  		top: 15rem;
+  		/*background-color: green;*/
   	}
 
-  	@media #{$medium-only} { 
-  		top: 11rem;
+  	@media #{$xlarge-only} { 
+  		top: 20rem;
+  		/*background-color: green;*/
+  	}
+
+  	@media #{$xxlarge-only} { 
+  		top: 20rem;
   		/*background-color: green;*/
   	}
 }
 
 
 .section__white--homepage{
-	background-color: #fff;
-	padding: 5rem;
+	/* background-color: #fff; */
+  	padding: 1rem;
+ 	padding-top: 7rem;
+  	padding-bottom: 4rem;
+  	height: 100%;
+  	width: 100%;
+  	text-align: center;
+  	/* background: url(/images/paws/quote.png) no-repeat; */
+  	@media #{$medium-up} { 
+  		padding: 2rem;
+ 		padding-top: 4rem;
+  		padding-bottom: 4rem;
+  	}
+}
+
+.section__mission{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+	text-align: center;
+  	font-size: 18px;
+  	background-color: $main_color;
+  	color: $white;
+  	@media #{$medium-up} { 
+  		font-size: 22px;
+  	}
+
 }
 
