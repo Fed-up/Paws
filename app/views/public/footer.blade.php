@@ -1,5 +1,5 @@
 	<footer class=" footer__wrapper">
-	<div class="footer">
+	<!-- <div class="footer">
 		<section class="row">
 		    <a class="logo__text--footer" href="/recipes">Where real food comes to life</a>
 		    <a class=" trigger-menu"><span class="logo__image--footer"></span></a>
@@ -12,19 +12,19 @@
 			</div>
 			<div class="columns small-12 medium-6">
 				<!-- Go to www.addthis.com/dashboard to customize your tools-->
-				<div class="addthis_horizontal_follow_toolbox"></div>
+				<!-- <div class="addthis_horizontal_follow_toolbox"></div>
 				<div class="footer__links">
 					<h4 class=" footer__links--heading">Contact Us</h4>
 					<p class=" footer__links--text">Call Tom: 0428 438 348</p>
 					<p class=" footer__links--text">Email Sarah: hello@sonaughtybutnice.com</p>
 
-				</div>
+				</div> -->
 				
 				<!-- <a href="#" class="footer__links">About US</a> -->
-			</div>
+			<!--</div>
 
 		</section>	
-	</div> 
+	</div>  -->
 	<div class="bottom__section__footer">
 		<section class="row"> 
 			<div class="columns small-6 medium-4 end">
