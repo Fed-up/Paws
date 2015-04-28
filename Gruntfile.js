@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 					sourceComments: "normal"
 				},
 		        files: {
-		          'public/sass/compiled_css/dev_snbn.css': 'public/sass/snbn.scss'
+		          'public/sass/compiled_css/dev_paws.css': 'public/sass/paws.scss'
 		        }     
 			},
 			// dist: {
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
 		copy:{	//Copies the sass files to into the deploy folder ready for the llive site		
 			css:{
 					files : {
-						'public/deploy_css/snbn.min.css' : 'public/sass/compiled_css/dev_snbn.css'
+						'public/deploy_css/paws.min.css' : 'public/sass/compiled_css/dev_paws.css'
 					}
 			},
 			// js:{
@@ -77,7 +77,7 @@ module.exports = function(grunt) {
 		cssmin:{
 			dist:{
 				files: {
-					'public/deploy_css/snbn.min.css' : 'public/sass/compiled_css/dev_snbn.css'
+					'public/deploy_css/paws.min.css' : 'public/sass/compiled_css/dev_paws.css'
 				}
 			}
 		},

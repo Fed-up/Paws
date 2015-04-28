@@ -1,5 +1,5 @@
     <header class="band header">
-        <a class="logo__text" href="/">So Naughty But Nice</a>
+        <a class="logo__text" href="/">Time 4 Paws</a>
         <a class=" trigger-menu"><span class="logo__image"></span></a>
         <a class=" trigger-menu"><span class="menu__image"></span></a>
     </header>
