@@ -20,6 +20,26 @@ video#bgvid {
 		display:none;
 	}
 }*/
+.section__white--form{
+	  position: absolute;
+	  top: 20rem;
+	  /* background-color: #fff; */
+	  padding: 1rem;
+	  /* width: 100%; */
+	  /* border: 1px solid #e0e0e0; */
+	  color: #fff;
+  	@media #{$small-only} { 
+  		padding: 0.2rem;
+  		top: 11rem;
+  		/*background-color: red;*/
+  	}
+
+  	@media #{$medium-only} { 
+  		top: 11rem;
+  		/*background-color: green;*/
+  	}
+}
+
 
 .section__white--homepage{
 	background-color: #fff;

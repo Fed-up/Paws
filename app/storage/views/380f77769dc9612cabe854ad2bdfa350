@@ -8,10 +8,41 @@
             <source src="videos/dogshow.mp4" type="video/mp4">
         </video>
         <button id="vidpause">Pause</button>
-        <section class="section__white--homepage">
-            <p class="slogan">Where Real food comes to life</p>
+        <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
+            <?php if(isset($data->id)): ?>
+                    <?php echo Form::open(array('action' => 'UserProfileController@postUpdateMembers', 'class' => 'form-horizontal')); ?>
+                <?php else: ?>
+                    <?php echo Form::open(array('action' => 'UserProfileController@postAddUser', 'class' => 'form-horizontal')); ?> 
+                <?php endif; ?>
+                <h2 class="form__title--signup">Join Time 4 Paws Today!</h2>
+                <div class="form-group <?php echo ($errors->has('fname')) ? 'has-error' : '' ;; ?> row">
+                    <?php echo Form::label('fname', 'First Name: ', array('class' => ' form_field_title ')); ?>
+                    <div class="">
+                        <?php echo ($errors->has('fname'))? '<p>'. $errors->first('fname') .'</p>' : ''; ?>
+                        <?php echo Form::text('fname', (isset($input['fname'])? Input::old('fname') : (isset($data->fname)? $data->fname : '' )), array('class' => 'columns small-8 input__text')); ?> 
+                    </div>
+                </div>
+                <div class="form-group <?php echo ($errors->has('email')) ? 'has-error' : '' ;; ?> row">
+                    <?php echo Form::label('email', 'Email: ', array('class' => ' form_field_title ')); ?>
+                    <div class="">
+                        <?php echo ($errors->has('email'))? '<p>'. $errors->first('email') .'</p>' : ''; ?>
+                        <?php echo Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => 'columns small-8 input__text')); ?> 
+                    </div>
+                </div>           
+            
+                <div class="">
+                    <div class="form__buttons">
+
+                        <?php echo Form::submit('', array('class' => 'form__image__submit')); ?>
+                    
+                    </div>
+                </div>
+            <?php echo Form::close(); ?>         
         </section>
-    
+        <section class="section__white--homepage">
+            <p class="slogan">Where Real food comes to life</p> 
+        </section>
+
 
 
 

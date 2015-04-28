@@ -3116,7 +3116,26 @@ video#bgvid {
 		display:none;
 	}
 }*/
-/* line 24, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+.section__white--form {
+  position: absolute;
+  top: 20rem;
+  /* background-color: #fff; */
+  padding: 1rem;
+  /* width: 100%; */
+  /* border: 1px solid #e0e0e0; */
+  color: #fff; }
+  @media only screen and (max-width: 480px) {
+    .section__white--form {
+      padding: 0.2rem;
+      top: 11rem;
+      /*background-color: red;*/ } }
+  @media only screen and (min-width:481px) and (max-width:768px) {
+    .section__white--form {
+      top: 11rem;
+      /*background-color: green;*/ } }
+
+/* line 44, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {
   background-color: #fff;
   padding: 5rem; }
@@ -3375,20 +3394,7 @@ body.showPanel .content-slot {
 /*@import "modules/recipes";*/
 /*@import "modules/signup";*/
 /*@import "modules/tile";*/
-/* line 2, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.form-horizontal {
-  padding: 0 1rem; }
-
-/* line 6, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.form__submit__button {
-  padding: 0.8rem;
-  background-color: green;
-  border: 0;
-  border-radius: 0.2rem;
-  font-size: 1.1rem;
-  color: #fff; }
-
-/* line 16, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 4, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__submit__button--login {
   padding: 0.8rem;
   background-color: green;
@@ -3398,7 +3404,7 @@ body.showPanel .content-slot {
   color: #fff;
   width: 100%; }
 
-/* line 26, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 14, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .remove {
   background-color: #ff5a5a;
   color: #fff;
@@ -3408,7 +3414,7 @@ body.showPanel .content-slot {
   max-width: 2rem;
   border: none; }
 
-/* line 36, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 24, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .add {
   display: inline-block;
   padding: 0.4rem;
@@ -3417,7 +3423,7 @@ body.showPanel .content-slot {
   background-color: #8fd2c8;
   color: #fff; }
 
-/* line 47, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 35, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .public__calc {
   display: inline-block;
   padding: 0.7rem;
@@ -3428,7 +3434,7 @@ body.showPanel .content-slot {
   float: right;
   border: none; }
 
-/* line 58, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 46, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .public__calc--cancel {
   display: inline-block;
   padding: 0.7rem;
@@ -3439,63 +3445,63 @@ body.showPanel .content-slot {
   font-size: 12px;
   background-color: #fff; }
 
-/* line 69, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 57, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .public__calc--cancel:hover {
   background-color: #fd8d91;
   border-radius: 0.4rem;
   color: #fff; }
 
-/* line 75, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 63, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .remove:after {
   content: 'x'; }
 
-/* line 79, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 67, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__login__header {
   color: #fff;
   margin: 0.5rem; }
 
-/* line 83, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 71, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__login__header--dark {
   color: #343434;
   margin: 0.5rem;
   text-align: center; }
 
-/* line 88, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 76, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__name--white {
   color: #fff;
   font-size: 0.8rem; }
 
-/* line 92, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 80, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__name--dark {
   color: #343434;
   font-size: 0.8rem; }
 
-/* line 96, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 84, C:/GitHub/Paws/public/sass/modules/_form.scss */
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0px 1000px white inset; }
 
-/* line 99, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 87, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-signin {
   width: 100%;
   margin: auto; }
 
-/* line 103, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 91, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-signin--swipe {
   margin-bottom: 3.2rem;
   margin-top: 1rem; }
 
-/* line 107, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 95, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__input--side--login {
   /* margin: auto; */
   /* margin-top: 2rem; */
   margin-left: 1rem;
   margin-right: 1rem; }
 
-/* line 115, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 103, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__input--side--login--swipe {
   margin-top: 0rem; }
 
-/* line 118, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 106, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-control {
   display: block;
   color: #343434;
@@ -3506,7 +3512,7 @@ input:-webkit-autofill {
   margin-bottom: 1rem;
   width: 100%; }
 
-/* line 129, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 117, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__control--no-width {
   display: block;
   color: #343434;
@@ -3516,50 +3522,20 @@ input:-webkit-autofill {
   border: 0px;
   margin-bottom: 1rem; }
 
-/* line 139, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 127, C:/GitHub/Paws/public/sass/modules/_form.scss */
 #_PackageRecipes .form__control--no-width {
   display: inline;
   margin-right: 10px;
   border: #e0e0e0 solid 1px;
   white-space: nowrap; }
 
-/* line 147, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 135, C:/GitHub/Paws/public/sass/modules/_form.scss */
 #_PackageRecipes .form-control-amount {
   display: inline;
   margin: 0 10px 0 0;
   border: #e0e0e0 solid 1px; }
 
-/* line 154, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.side__login__button {
-  background-color: #12cdb2;
-  color: #fff;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  float: right;
-  margin-bottom: 2rem;
-  margin-top: 0.5rem;
-  font-size: 1rem;
-  border: 0px; }
-
-@media only screen and (min-width: 481px) {
-  /* line 166, C:/GitHub/Paws/public/sass/modules/_form.scss */
-  .side__login__button {
-    padding: 0.5rem 1rem; } }
-
-/* line 169, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.side__login__button:hover {
-  background-color: #8fd2c8; }
-
-/* line 172, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.side__login__button--signup {
-  margin-right: 0rem; }
-
-@media only screen and (min-width: 481px) {
-  /* line 175, C:/GitHub/Paws/public/sass/modules/_form.scss */
-  .side__login__button--signup {
-    padding: 0.5rem 1rem; } }
-
-/* line 178, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 142, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__login__button--swipe {
   background-color: #ff7c81;
   color: #fff;
@@ -3572,11 +3548,11 @@ input:-webkit-autofill {
   width: 30%;
   font-size: 1rem; }
 
-/* line 192, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 156, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__login__button--swipe:hover {
   background-color: #fd8d91; }
 
-/* line 195, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 159, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__member__button {
   background-color: #ff7c81;
   color: #fff;
@@ -3587,15 +3563,15 @@ input:-webkit-autofill {
   margin-bottom: 1rem;
   float: right; }
 
-/* line 205, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 169, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__member__button--login {
   margin-right: 0rem; }
 
-/* line 208, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 172, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__member__button:hover {
   background-color: #fd8d91; }
 
-/* line 211, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 175, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side--nav {
   color: #fff;
   display: block;
@@ -3609,33 +3585,96 @@ input:-webkit-autofill {
   border-bottom: #fff 1px solid;
   font-weight: 700; }
 
-/* line 226, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 190, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side--nav:hover {
   background-color: #fff;
   color: #fd8d91;
   border-bottom: #e0e0e0 1px solid; }
 
-/* line 232, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 196, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .total__price {
   width: 100%;
   margin-bottom: 1rem;
   margin-right: 1rem;
   text-align: right; }
 
-/* line 239, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 203, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-group {
-  min-height: 40px; }
+  min-height: 40px;
+  display: block;
+  margin-top: 1rem; }
 
-/* line 243, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 209, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__box {
   margin: 0 1rem; }
 
-/* line 247, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 213, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__checkbox {
   float: left;
   margin: .7rem;
   /* font-size: 200%; */
   display: inline; }
+
+/* line 228, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__title--signup {
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: x-large; }
+
+/* line 235, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form_field_title {
+  margin-top: 0.5rem; }
+
+/* line 240, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.input__text {
+  display: block;
+  color: #343434;
+  padding: 0.7rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 0px;
+  /*width: 80%;*/
+  border: 1px solid #a8d5ce;
+  /*margin-right: 20rem;*/
+  /*margin-bottom: 1rem; */ }
+
+/* line 28, C:/webroot/lcsnbn/sass/modules/signup */
+/* line 254, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__submit__button {
+  padding: 0.8rem;
+  background-color: #ff8e5e;
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  color: #fff; }
+
+/* line 37, C:/webroot/lcsnbn/sass/modules/signup */
+/* line 264, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__submit__button:hover {
+  background-color: #ff5531; }
+
+/* line 268, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form-horizontal {
+  padding: 0 1rem; }
+  @media only screen and (max-width: 480px) {
+    .form-horizontal {
+      padding: 0 0.2rem; } }
+
+/* line 277, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__image__submit {
+  padding: 0.8rem;
+  background-color: #ff8e5e;
+  border: 0;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  background: url(/images/paws/logo100.png) no-repeat 0 0;
+  height: 100px;
+  width: 140px; }
 
 /*@import "modules/ingredient_page";*/
 /*@import "modules/recipe_page";*/
