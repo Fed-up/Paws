@@ -54,6 +54,8 @@ Route::get('/remove/{identifier}', 'CheckoutController@getRemoveItem');
 //Profile
 Route::get('signup', 'UserProfileController@getAddUser');
 Route::post('signup', 'UserProfileController@postAddUser');
+Route::post('/', 'HomeController@postAddUser');
+
 
 
 

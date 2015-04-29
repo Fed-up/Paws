@@ -12,8 +12,9 @@
         </div>
         <div id="vidpause"></div>
         <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
-                {{ Form::open(array('action' => 'UserProfileController@getAddUser', 'class' => 'form-horizontal')) }} 
+            {{ Form::open(array('action' => 'HomeController@postAddUser', 'class' => 'form-horizontal')) }} 
                 <h2 class="form__title--signup">I Want Time 4 Paws!</h2>
+
                 <div class="form-group {{ ($errors->has('fname')) ? 'has-error' : '' ; }} row">
                     {{ Form::label('fname', 'Full Name: ', array('class' => ' form_field_title ')) }}
                     <div class="">
@@ -27,7 +28,8 @@
                         {{ ($errors->has('email'))? '<p>'. $errors->first('email') .'</p>' : '' }}
                         {{ Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => 'columns small-12 medium-8 input__text')) }} 
                     </div>
-                </div>           
+                </div> 
+       
             
                 <div class="form__buttons">
                     {{ Form::submit('', array('class' => 'form__image__submit')) }}
@@ -38,7 +40,7 @@
                 </div> -->
             {{ Form::close() }}         
         </section>
-        <section class="row section__white--homepage row">
+        <section class="section__white--homepage row">
             <img src="/images/paws/quote.png" alt="Where Real food comes to life" name="Where Real food comes to life">
         </section>
         <section class="section__mission">
@@ -51,7 +53,7 @@
                 <br/>
                 <p class="">
                     We believe in the healing poswer of food
-                    and desire to educate and inspire people
+                    and desire to educate and inspire people 
                     to expect the best not only for themselves
                     but for our canine friends as well
                 </p>
@@ -61,8 +63,20 @@
                     is not only a smaile, its a place ti call a
                     second home, a place where there
                     will always be..
-                </p>  
+                </p>
 
+                @if(Session::has('errors'))
+                <? $errors = Session::get('errors'); ?>
+                <div class="alert alert-error">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    <ul>
+                        <li id="form-errors" >
+                            <h3> {{ $errors->first('email') }}</h3>
+                        </li>
+                    </ul>
+                </div>
+                @endif  
+                
 
             </article>
             

@@ -12,24 +12,38 @@ class UserProfileController extends BaseController {
 	}
 	
 	public function postAddUser(){
-		$input = Input::all();
-		// echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
+		
+		$input = Input::all();	
+
+		$fname = $input['fname'];
+		// $email = $input['email'];
+
 		$rules = array(
 			'fname' => 'required',
-			'email' => 'required|email|unique:users,email,'.Input::get('id'),
+			'email' => 'required|email|unique:users',
 		);
 
-
-		
 		$validator = Validator::make($input, $rules);
 		
 		if($validator->fails()){
-			return Redirect::back()
-				->withErrors($validator)
-				->withInput($input);
-		}else{
 
-			// echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
+			// get the error messages from the validator
+        	// $errors = $validator->messages();
+        	
+   //      	if ( ! empty( $errors ) ) {
+			//     foreach ( $errors->all() as $error ) {
+			//         echo '<div class="error">' . $errors->first() . '</div>';
+			//     }
+			// }exit;
+
+        	// echo '<pre>'; print_r($messages); echo '</pre>'; 	exit;
+
+			return Redirect::back()	
+				->withInput($input)
+				->withErrors($validator->messages());
+
+
+		}else{
 
 			$data	= new User();
 			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
@@ -43,7 +57,7 @@ class UserProfileController extends BaseController {
 
 		//$data = User::all();	
 		return Redirect::action('HomeController@getIndex');
-			//->with(array('data' => $data));
+		//->with(array('data' => $data));
 	}
 
 

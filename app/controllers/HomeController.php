@@ -6,6 +6,48 @@ class HomeController extends BaseController {
 		return View::make('public.index');
 	}
 
+	public function postAddUser(){
+		
+		$input = Input::all();	
+
+		$fname = $input['fname'];
+		// $email = $input['email'];
+
+		$rules = array(
+			'fname' => 'required',
+			'email' => 'required|email|unique:users',
+		);
+
+		$validator = Validator::make($input, $rules);
+		
+		if($validator->fails()){
+
+			// get the error messages from the validator
+        	$errors = $validator->messages();
+        	// echo '<pre>'; print_r($errors); echo '</pre>'; 	exit;
+
+			return Redirect::back()	
+				->withInput($input)
+				->withErrors($validator);
+
+
+		}else{
+
+			$data	= new User();
+			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
+			$data->fname 	= Input::get('fname');
+			$data->email 	= Input::get('email');
+			$data->user_type 	= 'GUEST';
+			$data->active  = 1;	
+			$data->save();
+			// echo '<pre>'; print_r($data); echo '</pre>'; 	exit;	
+		}; 
+
+		//$data = User::all();	
+		return Redirect::action('HomeController@getIndex');
+			//->with(array('data' => $data));
+	}
+
 
 	public function getMaps(){
 

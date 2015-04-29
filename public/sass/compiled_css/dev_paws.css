@@ -3167,12 +3167,13 @@ ul, li {
   padding-top: 7rem;
   padding-left: 1rem;
   padding-right: 2rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  text-align: center; }
   @media only screen and (min-width:481px) {
     .section__white--homepage {
       padding: 5rem; } }
 
-/* line 87, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 88, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__mission {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -3183,6 +3184,11 @@ ul, li {
   @media only screen and (max-width: 480px) {
     .section__mission {
       font-size: 22px; } }
+
+/* line 100, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+.error_message {
+  font-size: 80%;
+  color: #ff7c81; }
 
 /* line 1, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .panel--right {
