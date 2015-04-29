@@ -3,10 +3,10 @@
 		background-color: $main_dark;
 	  	background: transparent url(/images/paws/mobiledog.png) 50% 50% / cover no-repeat ;
 	 	height: 23.5rem;
-	 	width: 100%;
+	 	width: 100%; 
 	 	margin-top: -2.5rem; 
 	 	overflow: hidden;
-	 	background-size:cover;
+	 	background-size:cover;  
   	}
 
   	@media #{$medium-only} { 
@@ -19,15 +19,21 @@
 	 	overflow: hidden;
 	 	background-size:cover;
   	}
-}
+} 
 
 
 video#bgvid {
-
-	/*display: none;*/
-	background-size:cover; 
+	@media #{$small-only} {
+		display: none;
+		background-size:cover; 
+	}
+	@media #{$medium-only} {
+		display: none;
+		background-size:cover; 
+	}
 	
 	@media #{$large-up} { 
+
   		position: static; 
 		/*top: -2.5;*/
 		/*right: 0; */
@@ -69,7 +75,13 @@ video#bgvid {
  
 .section__white--homepage{
 	background-color: #fff;
-	padding: 5rem;
+	padding-top: 7rem;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	padding-bottom:5rem;
+	@media #{$medium-up} { 
+  		padding:5rem;
+  	}
 }
 
 .section__mission{

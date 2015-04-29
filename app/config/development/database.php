@@ -7,7 +7,7 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'xenusfit_snbn',
+			'database'  => 'xenusfit_paws',
 			'username'  => 'root',
 			'password'  => '',
 			'charset'   => 'utf8',

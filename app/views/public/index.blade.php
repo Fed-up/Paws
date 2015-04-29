@@ -5,18 +5,14 @@
 <main class="main page">
     <div class="bg"></div>
         <div class="video__home">
-            <video autoplay loop poster="/images/paws/videopic.jpg" id="bgvid" class="">
+            <video autoplay loop poster="/images/paws/videopic.jpg" id="bgvid" class="show-for-large-up">
                 <source src="videos/dogshow.webm" type="video/webm">
                 <source src="videos/dogshow.mp4" type="video/mp4">
             </video>
         </div>
-        <button id="vidpause">Pause</button>
+        <div id="vidpause"></div>
         <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
-            @if(isset($data->id))
-                    {{-- Form::open(array('action' => 'UserProfileController@postUpdateMembers', 'class' => 'form-horizontal')) --}}
-                @else
-                    {{-- Form::open(array('action' => 'UserProfileController@postAddUser', 'class' => 'form-horizontal')) --}} 
-                @endif
+                {{ Form::open(array('action' => 'UserProfileController@getAddUser', 'class' => 'form-horizontal')) }} 
                 <h2 class="form__title--signup">I Want Time 4 Paws!</h2>
                 <div class="form-group {{ ($errors->has('fname')) ? 'has-error' : '' ; }} row">
                     {{ Form::label('fname', 'Full Name: ', array('class' => ' form_field_title ')) }}
@@ -40,7 +36,7 @@
                 <!-- <div class="form-group">
                     {{ Form::submit('', array('class' => 'form__image__submit form__image__submit--small')) }}
                 </div> -->
-            {{-- Form::close() --}}         
+            {{ Form::close() }}         
         </section>
         <section class="row section__white--homepage row">
             <img src="/images/paws/quote.png" alt="Where Real food comes to life" name="Where Real food comes to life">

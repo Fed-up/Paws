@@ -3116,31 +3116,35 @@ ul, li {
     overflow: hidden;
     background-size: cover; } }
 
-/* line 25, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-video#bgvid {
-  /*display: none;*/
-  background-size: cover; }
-  @media only screen and (min-width:769px) {
-    video#bgvid {
-      position: static;
-      /*top: -2.5;*/
-      /*right: 0; */
-      /*bottom: 0;*/
-      margin-top: -2.5rem;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -100;
-      background: url(/images/paws/videopic.jpg) no-repeat 0 0;
-      background-size: cover; } }
+@media only screen and (max-width: 480px) {
+  video#bgvid {
+    display: none;
+    background-size: cover; } }
+@media only screen and (min-width:481px) and (max-width:768px) {
+  video#bgvid {
+    display: none;
+    background-size: cover; } }
+@media only screen and (min-width:769px) {
+  video#bgvid {
+    position: static;
+    /*top: -2.5;*/
+    /*right: 0; */
+    /*bottom: 0;*/
+    margin-top: -2.5rem;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url(/images/paws/videopic.jpg) no-repeat 0 0;
+    background-size: cover; } }
 
 /*@media only screen and (max-width: 480px) {
 	body.showPanel video#bgvid{
 		display:none;
 	}
 }*/
-/* line 51, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 57, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--form {
   position: absolute;
   top: 9rem;
@@ -3157,12 +3161,18 @@ video#bgvid {
       top: 25rem;
       /*background-color: green;*/ } }
 
-/* line 70, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 76, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {
   background-color: #fff;
-  padding: 5rem; }
+  padding-top: 7rem;
+  padding-left: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 5rem; }
+  @media only screen and (min-width:481px) {
+    .section__white--homepage {
+      padding: 5rem; } }
 
-/* line 75, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 87, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__mission {
   padding-top: 3rem;
   padding-bottom: 3rem;

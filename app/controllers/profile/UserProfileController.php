@@ -17,8 +17,6 @@ class UserProfileController extends BaseController {
 		$rules = array(
 			'fname' => 'required',
 			'email' => 'required|email|unique:users,email,'.Input::get('id'),
-			'password' => 'required|min:6',
-			'password_match' => 'required|min:6|same:password',
 		);
 
 
@@ -37,7 +35,6 @@ class UserProfileController extends BaseController {
 			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
 			$data->fname 	= Input::get('fname');
 			$data->email 	= Input::get('email');
-			$data->password 	= Hash::make(Input::get('password'));
 			$data->user_type 	= 'GUEST';
 			$data->active  = 1;	
 			$data->save();
@@ -45,7 +42,7 @@ class UserProfileController extends BaseController {
 		}; 
 
 		//$data = User::all();	
-		return Redirect::action('ProfileController@getProfile');
+		return Redirect::action('HomeController@getIndex');
 			//->with(array('data' => $data));
 	}
 
