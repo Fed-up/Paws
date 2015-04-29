@@ -5,6 +5,7 @@
 <main class="main page">
     <div class="bg"></div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="video__home">
             <video autoplay loop preload="none" poster="/images/paws/mobliedog.png" id="bgvid" class="">
                 <source src="videos/dogshow.webm" type="video/webm">
@@ -12,6 +13,8 @@
             </video>
         </div>
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
          <video autoplay loop poster="polina.jpg" id="bgvid" class="video__home">
             <source src="videos/dogshow.webm" type="video/webm">
             <source src="videos/dogshow.mp4" type="video/mp4">
@@ -52,8 +55,13 @@
         <section class="section__white--homepage">
             <p class="slogan">Where Real food comes to life</p> 
         </section>
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> parent of e202e44... Desktop is done!!
 
 
 

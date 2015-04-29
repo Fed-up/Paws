@@ -13,7 +13,11 @@
       <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css"> 
       
 <<<<<<< HEAD
+<<<<<<< HEAD
       <!-- Live site css  --> 
+=======
+      <!-- Live site css  -->
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
       <!-- Live site css  -->
 >>>>>>> parent of e202e44... Desktop is done!!

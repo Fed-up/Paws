@@ -3097,6 +3097,7 @@ ul, li {
   color: #12cdb2; }
 
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
 @media only screen and (max-width: 480px) {
   .video__home {
     background-color: #49c1b8;
@@ -3106,6 +3107,9 @@ ul, li {
     margin-top: -2.5rem; } }
 
 /* line 16, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+=======
+/* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
 =======
 /* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
@@ -3121,7 +3125,11 @@ video#bgvid {
   height: auto;
   z-index: -100;
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
   background: url(/images/paws/videopic.jpg) no-repeat 0 0;
+=======
+  background: url(polina.jpg) no-repeat;
+>>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
 =======
   background: url(polina.jpg) no-repeat;
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
@@ -3136,7 +3144,11 @@ video#bgvid {
 	}
 }*/
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
 /* line 39, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+=======
+/* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
 =======
 /* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
@@ -3158,6 +3170,7 @@ video#bgvid {
       top: 11rem;
       /*background-color: green;*/ } }
 
+<<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
 /* line 65, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {
@@ -3186,6 +3199,12 @@ video#bgvid {
   @media only screen and (min-width:481px) {
     .section__mission {
       font-size: 22px; } }
+=======
+/* line 44, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+.section__white--homepage {
+  background-color: #fff;
+  padding: 5rem; }
+>>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
 =======
 /* line 44, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {

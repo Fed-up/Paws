@@ -2782,7 +2782,11 @@ ul, li {
 /* line 74, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .page {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2821,7 +2825,11 @@ ul, li {
 /* line 105, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .content-link:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2849,7 +2857,11 @@ ul, li {
   font-family: headings;
   padding: 0.5rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #87cdac;
+=======
+  border-bottom: 1px solid #8fd2c8;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   border-bottom: 1px solid #8fd2c8;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2890,7 +2902,11 @@ ul, li {
 .content__title--link {
   text-decoration: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2899,7 +2915,11 @@ ul, li {
 /* line 169, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .content__title--link:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71; }
+=======
+  color: #343434; }
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434; }
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2926,7 +2946,11 @@ ul, li {
 /* line 189, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .content__title--main--tabs:hover {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71; }
+=======
+  color: #343434; }
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434; }
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2946,7 +2970,11 @@ ul, li {
 /* line 204, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .subnav {
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #87cdac;
+=======
+  border-bottom: 1px solid #8fd2c8;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   border-bottom: 1px solid #8fd2c8;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -2967,7 +2995,11 @@ ul, li {
 .tab__link {
   text-decoration: none;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3121,7 +3153,11 @@ ul, li {
   margin-top: -1rem;
   margin-bottom: 1rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #49c1b8; }
+=======
+  color: #12cdb2; }
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #12cdb2; }
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3130,6 +3166,7 @@ ul, li {
 .package__total--create-package {
   text-align: right;
   margin-bottom: 1rem;
+<<<<<<< HEAD
 <<<<<<< HEAD
   color: #49c1b8; }
 
@@ -3151,6 +3188,11 @@ ul, li {
 
 /* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
+=======
+  color: #12cdb2; }
+
+/* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 video#bgvid {
   position: static;
   /*top: -2.5;*/
@@ -3163,11 +3205,16 @@ video#bgvid {
   height: auto;
   z-index: -100;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background: url(/images/paws/videopic.jpg) no-repeat 0 0;
   background-size: cover; }
   @media only screen and (max-width: 480px) {
     video#bgvid {
       display: none; } }
+=======
+  background: url(polina.jpg) no-repeat;
+  background-size: cover; }
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   background: url(polina.jpg) no-repeat;
   background-size: cover; }
@@ -3179,21 +3226,28 @@ video#bgvid {
 	}
 }*/
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 39, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--form {
   position: absolute;
   top: 9rem;
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--form {
   position: absolute;
   top: 20rem;
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
   /* background-color: #fff; */
   padding: 1rem;
   /* width: 100%; */
   /* border: 1px solid #e0e0e0; */
   color: #fff; }
+<<<<<<< HEAD
 <<<<<<< HEAD
   @media only screen and (min-width:769px) and (max-width:960px) {
     .section__white--form {
@@ -3240,6 +3294,8 @@ video#bgvid {
 .panel--right {
   position: fixed;
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
   @media only screen and (max-width: 480px) {
     .section__white--form {
       padding: 0.2rem;
@@ -3258,6 +3314,9 @@ video#bgvid {
 /* line 1, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .panel--right {
   position: absolute;
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
   z-index: 0;
   width: 18rem;
@@ -3265,7 +3324,11 @@ video#bgvid {
   top: 0;
   right: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #def0e5;
+=======
+  background-color: #BAD38D;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   background-color: #BAD38D;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3287,7 +3350,11 @@ body.showPanel .content-slot {
 /* line 28, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .navTab_active {
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #def0e5;
+=======
+  background-color: #BAD38D;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   background-color: #BAD38D;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3305,11 +3372,15 @@ body.showPanel .content-slot {
   /* .push must be the same height as .footer */ }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 6, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .footer__wrapper {
   margin-left: 0rem; }
 
 /* line 10, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+/* line 7, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 7, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3322,15 +3393,21 @@ body.showPanel .content-slot {
   line-height: 2rem;
   padding: 0.8rem;
 <<<<<<< HEAD
+<<<<<<< HEAD
   border-bottom: 1px solid #49c1b8;
   text-align: center; }
 
 /* line 21, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
   border-bottom: 1px solid #12cdb2;
   text-align: center; }
 
 /* line 18, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .addthis_horizontal_follow_toolbox {
   margin-top: 0.5rem;
@@ -3339,7 +3416,11 @@ body.showPanel .content-slot {
   margin-right: 10%; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 27, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+/* line 24, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 24, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3355,6 +3436,7 @@ body.showPanel .content-slot {
 
 @media only screen and (min-width: 768px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 37, C:/GitHub/Paws/public/sass/modules/_footer.scss */
   .logo__image--footer {
     bottom: -0.77rem; } }
@@ -3365,6 +3447,8 @@ body.showPanel .content-slot {
   display: block;
   color: #6d6e71;
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
   /* line 34, C:/GitHub/Paws/public/sass/modules/_footer.scss */
   .logo__image--footer {
     bottom: -0.77rem; } }
@@ -3374,6 +3458,9 @@ body.showPanel .content-slot {
   font-size: 0.83rem;
   display: block;
   color: #343434;
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
   font-family: headings;
   padding-right: 0.5rem;
@@ -3382,7 +3469,11 @@ body.showPanel .content-slot {
 
 @media only screen and (min-width: 481px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 49, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+  /* line 46, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   /* line 46, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3392,6 +3483,7 @@ body.showPanel .content-slot {
     font-size: 1rem; } }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 55, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .logo__text--footer:hover, .logo__text--footer:active {
   color: #6d6e71; }
@@ -3399,12 +3491,17 @@ body.showPanel .content-slot {
 /* line 68, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 61, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 52, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .logo__text--footer:hover, .logo__text--footer:active {
   color: #343434; }
 
 /* line 68, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 58, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .footer__links {
   display: block;
@@ -3412,7 +3509,11 @@ body.showPanel .content-slot {
   border: 0px;
   text-align: left;
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3422,7 +3523,11 @@ body.showPanel .content-slot {
 
 @media only screen and (min-width: 481px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* line 71, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+  /* line 68, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   /* line 68, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3434,7 +3539,11 @@ body.showPanel .content-slot {
 
 /* line 90, C:/webroot/lcsnbn/sass/modules/footer */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 78, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+/* line 75, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 75, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3445,7 +3554,11 @@ body.showPanel .content-slot {
 
 /* line 100, C:/webroot/lcsnbn/sass/modules/footer */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 85, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+/* line 82, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 82, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3455,6 +3568,7 @@ body.showPanel .content-slot {
 
 /* line 106, C:/webroot/lcsnbn/sass/modules/footer */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 90, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .top__section__footer {
   background-color: #def0e5; }
@@ -3462,12 +3576,17 @@ body.showPanel .content-slot {
 /* line 115, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 95, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 87, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .top__section__footer {
   background-color: #a8d5ce; }
 
 /* line 115, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 92, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .bottom__section__footer {
   position: relative;
@@ -3480,7 +3599,11 @@ body.showPanel .content-slot {
 
 /* line 125, C:/webroot/lcsnbn/sass/modules/footer */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 105, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+=======
+/* line 102, C:/GitHub/Paws/public/sass/modules/_footer.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 102, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3618,7 +3741,11 @@ body.showPanel .content-slot {
   border-radius: 0.5rem;
   font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #87cdac;
+=======
+  background-color: #8fd2c8;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   background-color: #8fd2c8;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3631,7 +3758,11 @@ body.showPanel .content-slot {
   border-radius: 0.5rem;
   font-weight: bold;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #87cdac;
+=======
+  background-color: #8fd2c8;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   background-color: #8fd2c8;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3668,7 +3799,11 @@ body.showPanel .content-slot {
 /* line 71, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side__login__header--dark {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3683,7 +3818,11 @@ body.showPanel .content-slot {
 /* line 80, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__name--dark {
 <<<<<<< HEAD
+<<<<<<< HEAD
   color: #6d6e71;
+=======
+  color: #343434;
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
   color: #343434;
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3785,8 +3924,11 @@ input:-webkit-autofill {
   background-color: #fd8d91; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 177, C:/GitHub/Paws/public/sass/modules/_form.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 175, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .side--nav {
   color: #fff;
@@ -3808,6 +3950,9 @@ input:-webkit-autofill {
   border-bottom: #e0e0e0 1px solid; }
 
 /* line 196, C:/GitHub/Paws/public/sass/modules/_form.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .total__price {
   width: 100%;
@@ -3816,7 +3961,11 @@ input:-webkit-autofill {
   text-align: right; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 184, C:/GitHub/Paws/public/sass/modules/_form.scss */
+=======
+/* line 203, C:/GitHub/Paws/public/sass/modules/_form.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 203, C:/GitHub/Paws/public/sass/modules/_form.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3826,17 +3975,23 @@ input:-webkit-autofill {
   margin-top: 1rem; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 190, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__box {
   margin: 0 1rem; }
 
 /* line 194, C:/GitHub/Paws/public/sass/modules/_form.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 209, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__box {
   margin: 0 1rem; }
 
 /* line 213, C:/GitHub/Paws/public/sass/modules/_form.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .input__checkbox {
   float: left;
@@ -3845,7 +4000,11 @@ input:-webkit-autofill {
   display: inline; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 209, C:/GitHub/Paws/public/sass/modules/_form.scss */
+=======
+/* line 228, C:/GitHub/Paws/public/sass/modules/_form.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 228, C:/GitHub/Paws/public/sass/modules/_form.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3856,6 +4015,7 @@ input:-webkit-autofill {
   font-size: x-large; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 216, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form_field_title {
   margin-top: 0.5rem; }
@@ -3865,6 +4025,8 @@ input:-webkit-autofill {
   display: block;
   color: #6d6e71;
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 235, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form_field_title {
   margin-top: 0.5rem; }
@@ -3873,11 +4035,15 @@ input:-webkit-autofill {
 .input__text {
   display: block;
   color: #343434;
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
   padding: 0.7rem;
   border-radius: 5px;
   background-color: #fff;
   border: 0px;
+<<<<<<< HEAD
 <<<<<<< HEAD
   border: 1px solid #def0e5;
   /*margin-right: 20rem;*/
@@ -3889,6 +4055,8 @@ input:-webkit-autofill {
 /* line 28, C:/webroot/lcsnbn/sass/modules/signup */
 /* line 238, C:/GitHub/Paws/public/sass/modules/_form.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
   /*width: 80%;*/
   border: 1px solid #a8d5ce;
   /*margin-right: 20rem;*/
@@ -3896,6 +4064,9 @@ input:-webkit-autofill {
 
 /* line 28, C:/webroot/lcsnbn/sass/modules/signup */
 /* line 254, C:/GitHub/Paws/public/sass/modules/_form.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .form__submit__button {
   padding: 0.8rem;
@@ -3907,17 +4078,23 @@ input:-webkit-autofill {
 
 /* line 37, C:/webroot/lcsnbn/sass/modules/signup */
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 248, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__submit__button:hover {
   background-color: #ff5531; }
 
 /* line 252, C:/GitHub/Paws/public/sass/modules/_form.scss */
 =======
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 /* line 264, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__submit__button:hover {
   background-color: #ff5531; }
 
 /* line 268, C:/GitHub/Paws/public/sass/modules/_form.scss */
+<<<<<<< HEAD
+>>>>>>> parent of e202e44... Desktop is done!!
+=======
 >>>>>>> parent of e202e44... Desktop is done!!
 .form-horizontal {
   padding: 0 1rem; }
@@ -3926,7 +4103,11 @@ input:-webkit-autofill {
       padding: 0 0.2rem; } }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* line 261, C:/GitHub/Paws/public/sass/modules/_form.scss */
+=======
+/* line 277, C:/GitHub/Paws/public/sass/modules/_form.scss */
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 /* line 277, C:/GitHub/Paws/public/sass/modules/_form.scss */
 >>>>>>> parent of e202e44... Desktop is done!!
@@ -3943,6 +4124,7 @@ input:-webkit-autofill {
   background: url(/images/paws/logo100.png) no-repeat 0 0;
   height: 100px;
   width: 140px; }
+<<<<<<< HEAD
 <<<<<<< HEAD
   @media only screen and (max-width: 480px) {
     .form__image__submit {
@@ -3978,6 +4160,8 @@ input:-webkit-autofill {
   background-color: #49c1b8;
   color: #fff;
   border-bottom: #e0e0e0 1px solid; }
+=======
+>>>>>>> parent of e202e44... Desktop is done!!
 =======
 >>>>>>> parent of e202e44... Desktop is done!!
 
