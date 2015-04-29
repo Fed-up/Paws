@@ -172,27 +172,6 @@ input:-webkit-autofill {
 .side__member__button:hover {
   background-color: $contrast_light; }
 
-.side--nav {
-    color: #fff;
-    display: block;
-    background-color: $menu_dark;
-    width: 100%;
-    padding-left: 1rem;
-    // margin: 0.1rem 0;
-    height: 3.5rem;
-    line-height: 3.5rem;
-    text-align: left;
-    font-size: 1.125rem; 
-    border-bottom: #fff 1px solid;
-    font-weight: 700;
-}
-
-.side--nav:hover {
-  background-color: $menu_light; 
-  color: $contrast_light;
-  border-bottom: #e0e0e0 1px solid;
-}
-
 .total__price{
     width: 100%;
     margin-bottom: 1rem;
@@ -287,4 +266,39 @@ input:-webkit-autofill {
     background: url(/images/paws/logo100.png) no-repeat 0 0;
     height: 100px;
     width:140px;
+    @media #{small-only}{
+        position: static;
+        bottom:0rem;    
+    }
 }
+
+.form__image__submit{
+    padding:.8rem;
+    border:0;
+    border-radius:.2rem;
+    font-size:1.1rem;
+    color:#fff;
+    position:absolute;
+    bottom:3rem;
+    right:0;
+    background:url(/images/paws/logo100.png) no-repeat 0 0;
+    height:100px;
+    width:140px;
+    @media #{$small-only}{
+        position:static;
+        margin-top:2rem;
+    }
+}
+
+.form__image__submit:active{
+    border:0
+}
+
+.form__buttons{
+    @media #{$small-only}{
+        text-align:center
+    }
+}
+
+
+

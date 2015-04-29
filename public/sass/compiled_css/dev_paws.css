@@ -2840,7 +2840,7 @@ ul, li {
   text-align: center;
   font-family: headings;
   padding: 0.5rem;
-  border-bottom: 1px solid #8fd2c8;
+  border-bottom: 1px solid #87cdac;
   margin-top: 0.5rem;
   font-weight: bold; }
 
@@ -2921,7 +2921,7 @@ ul, li {
 
 /* line 204, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .subnav {
-  border-bottom: 1px solid #8fd2c8;
+  border-bottom: 1px solid #87cdac;
   padding-top: 0.3rem;
   padding-bottom: 0.3rem;
   text-align: center; }
@@ -3088,120 +3088,81 @@ ul, li {
   text-align: right;
   margin-top: -1rem;
   margin-bottom: 1rem;
-  color: #12cdb2; }
+  color: #87cdac; }
 
 /* line 336, C:/GitHub/Paws/public/sass/modules/_base.scss */
 .package__total--create-package {
   text-align: right;
   margin-bottom: 1rem;
-  color: #12cdb2; }
+  color: #87cdac; }
 
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
 @media only screen and (max-width: 480px) {
   .video__home {
-    background-color: #49c1b8;
-    background: url(/images/paws/mobiledog.png) no-repeat 0 0;
+    background-color: #87cdac;
+    background: transparent url(/images/paws/mobiledog.png) 50% 50%/cover no-repeat;
     height: 23.5rem;
     width: 100%;
-    margin-top: -2.5rem; } }
+    margin-top: -2.5rem;
+    overflow: hidden;
+    background-size: cover; } }
+@media only screen and (min-width:481px) and (max-width:768px) {
+  .video__home {
+    background-color: #87cdac;
+    background: transparent url(/images/paws/mobiledog.png) 50% 50%/cover no-repeat;
+    /*background: url(/images/paws/mobiledog.png) no-repeat 0 0; */
+    height: 23.5rem;
+    width: 100%;
+    margin-top: -2.5rem;
+    overflow: hidden;
+    background-size: cover; } }
 
-/* line 16, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-=======
-/* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-/* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-/* line 6, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
+/* line 25, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 video#bgvid {
-  position: static;
-  /*top: -2.5;*/
-  /*right: 0; */
-  /*bottom: 0;*/
-  margin-top: -2.5rem;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-  background: url(/images/paws/videopic.jpg) no-repeat 0 0;
-=======
-  background: url(polina.jpg) no-repeat;
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-  background: url(polina.jpg) no-repeat;
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-  background: url(/images/paws/videopic.jpg) no-repeat;
->>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
+  /*display: none;*/
   background-size: cover; }
+  @media only screen and (min-width:769px) {
+    video#bgvid {
+      position: static;
+      /*top: -2.5;*/
+      /*right: 0; */
+      /*bottom: 0;*/
+      margin-top: -2.5rem;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      background: url(/images/paws/videopic.jpg) no-repeat 0 0;
+      background-size: cover; } }
 
 /*@media only screen and (max-width: 480px) {
 	body.showPanel video#bgvid{
 		display:none;
 	}
 }*/
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-/* line 39, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-=======
-/* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-/* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-/* line 26, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
+/* line 51, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--form {
   position: absolute;
-  top: 20rem;
+  top: 9rem;
   /* background-color: #fff; */
   padding: 1rem;
   /* width: 100%; */
   /* border: 1px solid #e0e0e0; */
   color: #fff; }
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width:769px) {
     .section__white--form {
-      padding: 0.2rem;
-      top: 11rem;
-      /*background-color: red;*/ } }
-  @media only screen and (min-width:481px) and (max-width:768px) {
+      top: 15rem; } }
+  @media only screen and (min-width:961px) {
     .section__white--form {
-      top: 11rem;
+      top: 25rem;
       /*background-color: green;*/ } }
 
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-<<<<<<< HEAD:public/sass/dev_paws.css
-/* line 65, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-=======
-/* line 52, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
->>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
+/* line 70, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {
-  /* background-color: #fff; */
-  padding: 1rem;
-  padding-top: 7rem;
-  padding-bottom: 4rem;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  /* background: url(/images/paws/quote.png) no-repeat; */ }
-  @media only screen and (min-width:481px) {
-    .section__white--homepage {
-      padding: 2rem;
-      padding-top: 4rem;
-      padding-bottom: 4rem; } }
+  background-color: #fff;
+  padding: 5rem; }
 
-/* line 68, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 75, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__mission {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -3209,21 +3170,9 @@ video#bgvid {
   font-size: 18px;
   background-color: #87cdac;
   color: #fff; }
-  @media only screen and (min-width:481px) {
+  @media only screen and (max-width: 480px) {
     .section__mission {
       font-size: 22px; } }
-=======
-/* line 44, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-.section__white--homepage {
-  background-color: #fff;
-  padding: 5rem; }
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
-=======
-/* line 44, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
-.section__white--homepage {
-  background-color: #fff;
-  padding: 5rem; }
->>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
 
 /* line 1, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .panel--right {
@@ -3233,7 +3182,7 @@ video#bgvid {
   height: 100%;
   top: 0;
   right: 0;
-  background-color: #BAD38D;
+  background-color: #def0e5;
   padding-top: 6rem; }
 
 @media only screen and (max-width: 761px) {
@@ -3251,9 +3200,29 @@ body.showPanel .content-slot {
 
 /* line 28, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
 .navTab_active {
-  background-color: #BAD38D;
+  background-color: #87cdac;
   color: #fff;
   width: 100%; }
+
+/* line 35, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
+.side--nav {
+  color: #87cdac;
+  display: block;
+  background-color: #def0e5;
+  width: 100%;
+  padding-left: 1rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: left;
+  font-size: 1.125rem;
+  border-bottom: #fff 1px solid;
+  font-weight: 700; }
+
+/* line 50, C:/GitHub/Paws/public/sass/modules/_swipe.scss */
+.side--nav:hover {
+  background-color: #87cdac;
+  color: #fff;
+  border-bottom: #fff; }
 
 /*@import "modules/flexslider";*/
 /*@import "modules/checkout";*/
@@ -3274,7 +3243,7 @@ body.showPanel .content-slot {
   width: 100%;
   line-height: 2rem;
   padding: 0.8rem;
-  border-bottom: 1px solid #12cdb2;
+  border-bottom: 1px solid #87cdac;
   text-align: center; }
 
 /* line 18, C:/GitHub/Paws/public/sass/modules/_footer.scss */
@@ -3357,7 +3326,7 @@ body.showPanel .content-slot {
 /* line 106, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 87, C:/GitHub/Paws/public/sass/modules/_footer.scss */
 .top__section__footer {
-  background-color: #a8d5ce; }
+  background-color: #def0e5; }
 
 /* line 115, C:/webroot/lcsnbn/sass/modules/footer */
 /* line 92, C:/GitHub/Paws/public/sass/modules/_footer.scss */
@@ -3505,7 +3474,7 @@ body.showPanel .content-slot {
   padding: 0.4rem;
   border-radius: 0.5rem;
   font-weight: bold;
-  background-color: #8fd2c8;
+  background-color: #87cdac;
   color: #fff; }
 
 /* line 35, C:/GitHub/Paws/public/sass/modules/_form.scss */
@@ -3514,7 +3483,7 @@ body.showPanel .content-slot {
   padding: 0.7rem;
   border-radius: 0.5rem;
   font-weight: bold;
-  background-color: #8fd2c8;
+  background-color: #87cdac;
   color: #fff;
   float: right;
   border: none; }
@@ -3657,61 +3626,41 @@ input:-webkit-autofill {
   background-color: #fd8d91; }
 
 /* line 175, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.side--nav {
-  color: #fff;
-  display: block;
-  background-color: #BAD38D;
-  width: 100%;
-  padding-left: 1rem;
-  height: 3.5rem;
-  line-height: 3.5rem;
-  text-align: left;
-  font-size: 1.125rem;
-  border-bottom: #fff 1px solid;
-  font-weight: 700; }
-
-/* line 190, C:/GitHub/Paws/public/sass/modules/_form.scss */
-.side--nav:hover {
-  background-color: #fff;
-  color: #fd8d91;
-  border-bottom: #e0e0e0 1px solid; }
-
-/* line 196, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .total__price {
   width: 100%;
   margin-bottom: 1rem;
   margin-right: 1rem;
   text-align: right; }
 
-/* line 203, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 182, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-group {
   min-height: 40px;
   display: block;
   margin-top: 1rem; }
 
-/* line 209, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 188, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__box {
   margin: 0 1rem; }
 
-/* line 213, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 192, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__checkbox {
   float: left;
   margin: .7rem;
   /* font-size: 200%; */
   display: inline; }
 
-/* line 228, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 207, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__title--signup {
   text-align: center;
   color: #fff;
   font-weight: 700;
   font-size: x-large; }
 
-/* line 235, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 214, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form_field_title {
   margin-top: 0.5rem; }
 
-/* line 240, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 219, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .input__text {
   display: block;
   color: #343434;
@@ -3720,12 +3669,12 @@ input:-webkit-autofill {
   background-color: #fff;
   border: 0px;
   /*width: 80%;*/
-  border: 1px solid #a8d5ce;
+  border: 1px solid #def0e5;
   /*margin-right: 20rem;*/
   /*margin-bottom: 1rem; */ }
 
 /* line 28, C:/webroot/lcsnbn/sass/modules/signup */
-/* line 254, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 233, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__submit__button {
   padding: 0.8rem;
   background-color: #ff8e5e;
@@ -3735,18 +3684,18 @@ input:-webkit-autofill {
   color: #fff; }
 
 /* line 37, C:/webroot/lcsnbn/sass/modules/signup */
-/* line 264, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 243, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__submit__button:hover {
   background-color: #ff5531; }
 
-/* line 268, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 247, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form-horizontal {
   padding: 0 1rem; }
   @media only screen and (max-width: 480px) {
     .form-horizontal {
       padding: 0 0.2rem; } }
 
-/* line 277, C:/GitHub/Paws/public/sass/modules/_form.scss */
+/* line 256, C:/GitHub/Paws/public/sass/modules/_form.scss */
 .form__image__submit {
   padding: 0.8rem;
   background-color: #ff8e5e;
@@ -3760,6 +3709,36 @@ input:-webkit-autofill {
   background: url(/images/paws/logo100.png) no-repeat 0 0;
   height: 100px;
   width: 140px; }
+  @media small-only {
+    .form__image__submit {
+      position: static;
+      bottom: 0rem; } }
+
+/* line 275, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__image__submit {
+  padding: .8rem;
+  border: 0;
+  border-radius: .2rem;
+  font-size: 1.1rem;
+  color: #fff;
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  background: url(/images/paws/logo100.png) no-repeat 0 0;
+  height: 100px;
+  width: 140px; }
+  @media only screen and (max-width: 480px) {
+    .form__image__submit {
+      position: static;
+      margin-top: 2rem; } }
+
+/* line 293, C:/GitHub/Paws/public/sass/modules/_form.scss */
+.form__image__submit:active {
+  border: 0; }
+
+@media only screen and (max-width: 480px) {
+  .form__buttons {
+    text-align: center; } }
 
 /*@import "modules/ingredient_page";*/
 /*@import "modules/recipe_page";*/

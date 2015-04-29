@@ -10,22 +10,11 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
       @yield('_header')
       <!-- Dev site css --> 
-      <!-- <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css">  -->
+      <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css"> 
       
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <!-- Live site css  --> 
-<<<<<<< HEAD
-=======
       <!-- Live site css  -->
->>>>>>> parent of e202e44... Desktop is done!!
-=======
-      <!-- Live site css  -->
->>>>>>> parent of e202e44... Desktop is done!!
       <!-- <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css">  -->
-=======
-      <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css"> 
->>>>>>> parent of 8736b5f... grunts not working!!
+
 
       <link rel="stylesheet" type="text/css" href="/packages/jquery-1.11.1.min/vendor/jquery-ui-1.10.4.custom/css/no-theme/jquery-ui-1.10.4.custom.min.css"/>
   </head>

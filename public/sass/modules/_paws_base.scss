@@ -1,7 +1,3 @@
-
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 .video__home{
 	@media #{$small-only} { 
 		background-color: $main_dark;
@@ -28,8 +24,8 @@
 
 video#bgvid {
 
-	display: none;
-	background-size:cover;
+	/*display: none;*/
+	background-size:cover; 
 	
 	@media #{$large-up} { 
   		position: static; 
@@ -45,29 +41,6 @@ video#bgvid {
 		background: url(/images/paws/videopic.jpg) no-repeat 0 0;
 		background-size: cover;	
   	}
-
-.video__home{
-=======
-video#bgvid {
->>>>>>> parent of 8736b5f... grunts not working!!
-	position: static; 
-	/*top: -2.5;*/
-	/*right: 0; */
-	/*bottom: 0;*/
-	margin-top: -2.5rem;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-<<<<<<< HEAD
-	height: auto;  
-	z-index: -100;
-	background: url(polina.jpg) no-repeat;
-=======
-	height: auto; 
-	z-index: -100;
-	background: url(/images/paws/videopic.jpg) no-repeat;
->>>>>>> parent of 8736b5f... grunts not working!!
-	background-size: cover;
 }
 
 /*@media only screen and (max-width: 480px) {
@@ -76,67 +49,37 @@ video#bgvid {
 	}
 }*/
 .section__white--form{
-	  position: absolute;
-	  top: 9rem;
-	  /* background-color: #fff; */
-	  padding: 1rem;
-	  /* width: 100%; */
-	  /* border: 1px solid #e0e0e0; */
-	  color: #fff;
-
-	@media #{$large-only} { 
+	position: absolute;
+	top: 9rem;
+	/* background-color: #fff; */
+	padding: 1rem;
+	/* width: 100%; */
+	/* border: 1px solid #e0e0e0; */
+	color: #fff;
+	@media #{$large-up} { 
   		top: 15rem;
+  	}
+
+  	@media #{$xlarge-up} { 
+  		top: 25rem;
   		/*background-color: green;*/
   	}
 
-  	@media #{$xlarge-only} { 
-  		top: 20rem;
-  		/*background-color: green;*/
-  	}
-
-  	@media #{$xxlarge-only} { 
-  		top: 20rem;
-	  position: absolute;
-	  top: 20rem;
-	  /* background-color: #fff; */
-	  padding: 1rem;
-	  /* width: 100%; */
-	  /* border: 1px solid #e0e0e0; */
-	  color: #fff;
-  	@media #{$small-only} { 
-  		padding: 0.2rem;
-  		top: 11rem;
-  		/*background-color: red;*/
-  	}
-
-  	@media #{$medium-only} { 
-  		top: 11rem;
-	  position: absolute;
-	  top: 20rem;
-	  /* background-color: #fff; */
-	  padding: 1rem;
-	  /* width: 100%; */
-	  /* border: 1px solid #e0e0e0; */
-	  color: #fff;
-  	@media #{$small-only} { 
-  		padding: 0.2rem;
-  		top: 11rem;
-  		/*background-color: red;*/
-  	}
-
-  	@media #{$medium-only} { 
-  		top: 11rem;
-  		/*background-color: green;*/
-  	}
 }
-
 
 .section__white--homepage{
 	background-color: #fff;
 	padding: 5rem;
 }
-<<<<<<< HEAD
-!!
-=======
->>>>>>> parent of 8736b5f... grunts not working!!
 
+.section__mission{
+	padding-top:3rem;
+	padding-bottom:3rem;
+	text-align:center;
+	font-size:18px;
+	background-color:#87cdac;
+	color:#fff;
+	@media #{$small-only} { 
+  		font-size:22px;
+  	}
+}
