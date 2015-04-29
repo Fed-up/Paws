@@ -3098,6 +3098,7 @@ ul, li {
 
 <<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
 @media only screen and (max-width: 480px) {
   .video__home {
     background-color: #49c1b8;
@@ -3113,6 +3114,9 @@ ul, li {
 =======
 /* line 3, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
+=======
+/* line 6, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
 video#bgvid {
   position: static;
   /*top: -2.5;*/
@@ -3126,6 +3130,7 @@ video#bgvid {
   z-index: -100;
 <<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
   background: url(/images/paws/videopic.jpg) no-repeat 0 0;
 =======
   background: url(polina.jpg) no-repeat;
@@ -3133,16 +3138,17 @@ video#bgvid {
 =======
   background: url(polina.jpg) no-repeat;
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
+=======
+  background: url(/images/paws/videopic.jpg) no-repeat;
+>>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
   background-size: cover; }
-  @media only screen and (max-width: 480px) {
-    video#bgvid {
-      display: none; } }
 
 /*@media only screen and (max-width: 480px) {
 	body.showPanel video#bgvid{
 		display:none;
 	}
 }*/
+<<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
 /* line 39, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
@@ -3152,6 +3158,9 @@ video#bgvid {
 =======
 /* line 23, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 >>>>>>> parent of e202e44... Desktop is done!!:public/sass/compiled_css/dev_paws.css
+=======
+/* line 26, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
 .section__white--form {
   position: absolute;
   top: 20rem;
@@ -3172,7 +3181,11 @@ video#bgvid {
 
 <<<<<<< HEAD:public/sass/dev_paws.css
 <<<<<<< HEAD:public/sass/dev_paws.css
+<<<<<<< HEAD:public/sass/dev_paws.css
 /* line 65, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+=======
+/* line 52, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+>>>>>>> parent of 8736b5f... grunts not working!!:public/sass/compiled_css/dev_paws.css
 .section__white--homepage {
   /* background-color: #fff; */
   padding: 1rem;
@@ -3188,7 +3201,7 @@ video#bgvid {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
 
-/* line 81, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 68, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__mission {
   padding-top: 3rem;
   padding-bottom: 3rem;

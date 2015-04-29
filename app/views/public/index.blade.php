@@ -6,6 +6,7 @@
     <div class="bg"></div>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <div class="video__home">
             <video autoplay loop preload="none" poster="/images/paws/mobliedog.png" id="bgvid" class="">
                 <source src="videos/dogshow.webm" type="video/webm">
@@ -20,6 +21,12 @@
             <source src="videos/dogshow.mp4" type="video/mp4">
         </video>
 >>>>>>> parent of e202e44... Desktop is done!!
+=======
+         <video autoplay loop poster="/images/paws/videopic.jpg" id="bgvid" class="video__home">
+            <source src="videos/dogshow.webm" type="video/webm">
+            <source src="videos/dogshow.mp4" type="video/mp4">
+        </video>
+>>>>>>> parent of 8736b5f... grunts not working!!
         <button id="vidpause">Pause</button>
         <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
             @if(isset($data->id))
@@ -115,6 +122,10 @@
         video#bgvid { transition: 5s opacity; }
         .stopfade { opacity: .5; }
         
+
+    </script>
+    <script type="text/javascript">
+        .(window).height
 
     </script>
 @stop

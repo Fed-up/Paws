@@ -1,6 +1,7 @@
 
 <<<<<<< HEAD
 
+<<<<<<< HEAD
 .video__home{
 	@media #{$small-only} { 
 		background-color: $main_dark;
@@ -46,6 +47,9 @@ video#bgvid {
   	}
 
 .video__home{
+=======
+video#bgvid {
+>>>>>>> parent of 8736b5f... grunts not working!!
 	position: static; 
 	/*top: -2.5;*/
 	/*right: 0; */
@@ -54,9 +58,15 @@ video#bgvid {
 	min-width: 100%; 
 	min-height: 100%;
 	width: auto; 
+<<<<<<< HEAD
 	height: auto;  
 	z-index: -100;
 	background: url(polina.jpg) no-repeat;
+=======
+	height: auto; 
+	z-index: -100;
+	background: url(/images/paws/videopic.jpg) no-repeat;
+>>>>>>> parent of 8736b5f... grunts not working!!
 	background-size: cover;
 }
 
@@ -66,28 +76,25 @@ video#bgvid {
 	}
 }*/
 .section__white--form{
-	position: absolute;  
-	top: 20rem;
-	/* background-color: #fff; */
-	padding: 1rem;
-	/* width: 100%; */
-	/* border: 1px solid #e0e0e0; */
-	color: #fff;
-	  
-	@media #{$small-up} { 
-  		top: 9rem;
-  	}
-     
-	@media #{$large-up} { 
+	  position: absolute;
+	  top: 9rem;
+	  /* background-color: #fff; */
+	  padding: 1rem;
+	  /* width: 100%; */
+	  /* border: 1px solid #e0e0e0; */
+	  color: #fff;
+
+	@media #{$large-only} { 
   		top: 15rem;
+  		/*background-color: green;*/
   	}
 
-  	@media #{$xlarge-up} {  
+  	@media #{$xlarge-only} { 
   		top: 20rem;
   		/*background-color: green;*/
   	}
 
-  	@media #{$xxlarge-up} { 
+  	@media #{$xxlarge-only} { 
   		top: 20rem;
 	  position: absolute;
 	  top: 20rem;
@@ -128,5 +135,8 @@ video#bgvid {
 	background-color: #fff;
 	padding: 5rem;
 }
+<<<<<<< HEAD
 !!
+=======
+>>>>>>> parent of 8736b5f... grunts not working!!
 
