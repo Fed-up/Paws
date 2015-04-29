@@ -3,19 +3,48 @@
     outline: 0;
 }
 
+.video__home{
+	@media #{$small-only} { 
+		background-color: $main_dark;
+	  	background: transparent url(/images/paws/mobiledog.png) 50% 50% / cover no-repeat ;
+	 	height: 23.5rem;
+	 	width: 100%;
+	 	margin-top: -2.5rem; 
+	 	overflow: hidden;
+	 	background-size:cover;
+  	}
+
+  	@media #{$medium-only} { 
+		background-color: $main_dark;
+		background: transparent url(/images/paws/mobiledog.png) 50% 50% / cover no-repeat ;
+	  	/*background: url(/images/paws/mobiledog.png) no-repeat 0 0; */
+	 	height: 23.5rem;
+	 	width: 100%;
+	 	margin-top: -2.5rem;
+	 	overflow: hidden;
+	 	background-size:cover;
+  	}
+}
+
 video#bgvid {
-	position: static; 
-	/*top: -2.5;*/
-	/*right: 0; */
-	/*bottom: 0;*/
-	margin-top: -2.5rem;
-	min-width: 100%; 
-	min-height: 100%;
-	width: auto; 
-	height: auto; 
-	z-index: -100;
-	background: url(/images/paws/videopic.jpg) no-repeat;
-	background-size: cover;
+	display: none;
+	background-size:cover;
+	
+	@media #{$large-up} { 
+  		position: static; 
+		/*top: -2.5;*/
+		/*right: 0; */
+		/*bottom: 0;*/
+		margin-top: -2.5rem;
+		min-width: 100%; 
+		min-height: 100%;
+		width: auto;  
+		height: auto; 
+		z-index: -100;
+		background: url(/images/paws/videopic.jpg) no-repeat 0 0;
+		background-size: cover;	
+  	}
+
 }
 
 /*@media only screen and (max-width: 480px) {
@@ -24,25 +53,28 @@ video#bgvid {
 	}
 }*/
 .section__white--form{
-	  position: absolute;
-	  top: 9rem;
-	  /* background-color: #fff; */
-	  padding: 1rem;
-	  /* width: 100%; */
-	  /* border: 1px solid #e0e0e0; */
-	  color: #fff;
-
-	@media #{$large-only} { 
+	position: absolute;  
+	top: 20rem;
+	/* background-color: #fff; */
+	padding: 1rem;
+	/* width: 100%; */
+	/* border: 1px solid #e0e0e0; */
+	color: #fff;
+	  
+	@media #{$small-up} { 
+  		top: 9rem;
+  	}
+     
+	@media #{$large-up} { 
   		top: 15rem;
-  		/*background-color: green;*/
   	}
 
-  	@media #{$xlarge-only} { 
+  	@media #{$xlarge-up} {  
   		top: 20rem;
   		/*background-color: green;*/
   	}
 
-  	@media #{$xxlarge-only} { 
+  	@media #{$xxlarge-up} { 
   		top: 20rem;
   		/*background-color: green;*/
   	}
@@ -77,4 +109,5 @@ video#bgvid {
   	}
 
 }
+
 

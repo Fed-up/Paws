@@ -3100,7 +3100,15 @@ ul, li {
 *:focus {
   outline: 0; }
 
-/* line 6, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+@media only screen and (max-width: 480px) {
+  .video__home {
+    background-color: #49c1b8;
+    background: url(/images/paws/mobiledog.png) no-repeat 0 0;
+    height: 23.5rem;
+    width: 100%;
+    margin-top: -2.5rem; } }
+
+/* line 16, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 video#bgvid {
   position: static;
   /*top: -2.5;*/
@@ -3112,15 +3120,18 @@ video#bgvid {
   width: auto;
   height: auto;
   z-index: -100;
-  background: url(/images/paws/videopic.jpg) no-repeat;
+  background: url(/images/paws/videopic.jpg) no-repeat 0 0;
   background-size: cover; }
+  @media only screen and (max-width: 480px) {
+    video#bgvid {
+      display: none; } }
 
 /*@media only screen and (max-width: 480px) {
 	body.showPanel video#bgvid{
 		display:none;
 	}
 }*/
-/* line 26, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 39, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--form {
   position: absolute;
   top: 9rem;
@@ -3142,7 +3153,7 @@ video#bgvid {
       top: 20rem;
       /*background-color: green;*/ } }
 
-/* line 52, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 65, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__white--homepage {
   /* background-color: #fff; */
   padding: 1rem;
@@ -3158,7 +3169,7 @@ video#bgvid {
       padding-top: 4rem;
       padding-bottom: 4rem; } }
 
-/* line 68, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 81, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__mission {
   padding-top: 3rem;
   padding-bottom: 3rem;

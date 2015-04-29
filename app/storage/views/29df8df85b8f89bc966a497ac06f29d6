@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<title><?php echo isset($title) ? $title : "So Naughty But Nice"; ?></title>
+    	<title><?php echo isset($title) ? $title : "Time 4 Paws"; ?></title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
       <?php echo $__env->yieldContent('_header'); ?>
       <!-- Dev site css --> 
