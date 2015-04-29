@@ -4,74 +4,55 @@
 
 <main class="main page">
     <div class="bg"></div>
+<<<<<<< HEAD
         <div class="video__home">
             <video autoplay loop preload="none" poster="/images/paws/mobliedog.png" id="bgvid" class="">
                 <source src="videos/dogshow.webm" type="video/webm">
                 <source src="videos/dogshow.mp4" type="video/mp4">
             </video>
         </div>
+=======
+         <video autoplay loop poster="polina.jpg" id="bgvid" class="video__home">
+            <source src="videos/dogshow.webm" type="video/webm">
+            <source src="videos/dogshow.mp4" type="video/mp4">
+        </video>
+>>>>>>> parent of e202e44... Desktop is done!!
         <button id="vidpause">Pause</button>
         <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
             @if(isset($data->id))
-                    {{-- Form::open(array('action' => 'UserProfileController@postUpdateMembers', 'class' => 'form-horizontal')) --}}
+                    {{ Form::open(array('action' => 'UserProfileController@postUpdateMembers', 'class' => 'form-horizontal')) }}
                 @else
-                    {{-- Form::open(array('action' => 'UserProfileController@postAddUser', 'class' => 'form-horizontal')) --}} 
+                    {{ Form::open(array('action' => 'UserProfileController@postAddUser', 'class' => 'form-horizontal')) }} 
                 @endif
-                <h2 class="form__title--signup">I Want Time 4 Paws!</h2>
+                <h2 class="form__title--signup">Join Time 4 Paws Today!</h2>
                 <div class="form-group {{ ($errors->has('fname')) ? 'has-error' : '' ; }} row">
-                    {{ Form::label('fname', 'Full Name: ', array('class' => ' form_field_title ')) }}
+                    {{ Form::label('fname', 'First Name: ', array('class' => ' form_field_title ')) }}
                     <div class="">
                         {{ ($errors->has('fname'))? '<p>'. $errors->first('fname') .'</p>' : '' }}
-                        {{ Form::text('fname', (isset($input['fname'])? Input::old('fname') : (isset($data->fname)? $data->fname : '' )), array('class' => 'columns small-12 medium-8 input__text')) }} 
+                        {{ Form::text('fname', (isset($input['fname'])? Input::old('fname') : (isset($data->fname)? $data->fname : '' )), array('class' => 'columns small-8 input__text')) }} 
                     </div>
                 </div>
                 <div class="form-group {{ ($errors->has('email')) ? 'has-error' : '' ; }} row">
                     {{ Form::label('email', 'Email: ', array('class' => ' form_field_title ')) }}
                     <div class="">
                         {{ ($errors->has('email'))? '<p>'. $errors->first('email') .'</p>' : '' }}
-                        {{ Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => 'columns small-12 medium-8 input__text')) }} 
+                        {{ Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => 'columns small-8 input__text')) }} 
                     </div>
                 </div>           
             
-                <div class="form__buttons">
-                    {{ Form::submit('', array('class' => 'form__image__submit')) }}
+                <div class="">
+                    <div class="form__buttons">
+
+                        {{ Form::submit('', array('class' => 'form__image__submit')) }}
+                    
+                    </div>
                 </div>
-
-                <!-- <div class="form-group">
-                    {{ Form::submit('', array('class' => 'form__image__submit form__image__submit--small')) }}
-                </div> -->
-            {{-- Form::close() --}}         
+            {{ Form::close() }}         
         </section>
-        <section class="row section__white--homepage row">
-            <img src="/images/paws/quote.png" alt="Where Real food comes to life" name="Where Real food comes to life">
+        <section class="section__white--homepage">
+            <p class="slogan">Where Real food comes to life</p> 
         </section>
-        <section class="section__mission">
-            <article class="small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3">
-                <p class="">
-                We are creating a dog friendly ‘real food’
-                cafe, that is passionate about providing
-                nutritious, organic, locally sourced cuisine
-                </p>
-                <br/>
-                <p class="">
-                    We believe in the healing poswer of food
-                    and desire to educate and inspire people
-                    to expect the best not only for themselves
-                    but for our canine friends as well
-                </p>
-                <br/>
-                <p class="">
-                    We strive to create a place where service
-                    is not only a smaile, its a place ti call a
-                    second home, a place where there
-                    will always be..
-                </p>  
 
-
-            </article>
-            
-
-        </section>
 
 
 

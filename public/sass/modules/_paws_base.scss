@@ -1,7 +1,4 @@
 
-*:focus {
-    outline: 0;
-}
 
 .video__home{
 	@media #{$small-only} { 
@@ -27,6 +24,7 @@
 }
 
 video#bgvid {
+<<<<<<< HEAD
 	display: none;
 	background-size:cover;
 	
@@ -45,6 +43,20 @@ video#bgvid {
 		background-size: cover;	
   	}
 
+=======
+	position: static; 
+	/*top: -2.5;*/
+	/*right: 0; */
+	/*bottom: 0;*/
+	margin-top: -2.5rem;
+	min-width: 100%; 
+	min-height: 100%;
+	width: auto; 
+	height: auto; 
+	z-index: -100;
+	background: url(polina.jpg) no-repeat;
+	background-size: cover;
+>>>>>>> parent of e202e44... Desktop is done!!
 }
 
 /*@media only screen and (max-width: 480px) {
@@ -53,6 +65,7 @@ video#bgvid {
 	}
 }*/
 .section__white--form{
+<<<<<<< HEAD
 	position: absolute;  
 	top: 20rem;
 	/* background-color: #fff; */
@@ -76,38 +89,31 @@ video#bgvid {
 
   	@media #{$xxlarge-up} { 
   		top: 20rem;
+=======
+	  position: absolute;
+	  top: 20rem;
+	  /* background-color: #fff; */
+	  padding: 1rem;
+	  /* width: 100%; */
+	  /* border: 1px solid #e0e0e0; */
+	  color: #fff;
+  	@media #{$small-only} { 
+  		padding: 0.2rem;
+  		top: 11rem;
+  		/*background-color: red;*/
+  	}
+
+  	@media #{$medium-only} { 
+  		top: 11rem;
+>>>>>>> parent of e202e44... Desktop is done!!
   		/*background-color: green;*/
   	}
 }
 
 
 .section__white--homepage{
-	/* background-color: #fff; */
-  	padding: 1rem;
- 	padding-top: 7rem;
-  	padding-bottom: 4rem;
-  	height: 100%;
-  	width: 100%;
-  	text-align: center;
-  	/* background: url(/images/paws/quote.png) no-repeat; */
-  	@media #{$medium-up} { 
-  		padding: 2rem;
- 		padding-top: 4rem;
-  		padding-bottom: 4rem;
-  	}
-}
-
-.section__mission{
-	padding-top: 3rem;
-	padding-bottom: 3rem;
-	text-align: center;
-  	font-size: 18px;
-  	background-color: $main_color;
-  	color: $white;
-  	@media #{$medium-up} { 
-  		font-size: 22px;
-  	}
-
+	background-color: #fff;
+	padding: 5rem;
 }
 
 

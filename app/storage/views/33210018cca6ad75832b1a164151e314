@@ -1,4 +1,4 @@
-	<footer class="footer__wrapper">
+	<footer class=" footer__wrapper">
 	<!-- <div class="footer">
 		<section class="row">
 		    <a class="logo__text--footer" href="/recipes">Where real food comes to life</a>
