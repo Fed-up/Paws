@@ -40,10 +40,11 @@
             {{ Form::close() }}         
         </section>
         <section class="section__white--homepage row">
-            <!-- <img src="/images/paws/quote.png" alt="Where Real food comes to life" name="Where Real food comes to life"> -->
+            <img src="/images/paws/s2leaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf1">
             <p>Where real food comes to life</p>
         </section>
         <section id="mission"class="section__mission">
+            <img src="/images/paws/rleaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf3">
             <article class="small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3">
                 <p class="">
                 We are creating a dog friendly ‘real food’
@@ -66,11 +67,40 @@
                 </p>
             </article>         
         </section>
-
-
-
-
-</main>
+        <section class="section__white--homepage row">
+            <img src="/images/paws/logo200.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-small-only" style="width: 200px;  margin: auto;">
+            <img src="/images/paws/logo300.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-medium-only" style="width: 300px;  margin: auto;">
+            <img src="/images/paws/logo400.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-large-up" style="width: 400px;  margin: auto;">
+            <!-- <p>Where real food comes to life</p> -->
+        </section>
+        <section id="vision"class="section__vision">
+            <article class="small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3">
+                <b class="vision_p">
+                A cafe that welcomes the ENTIRE family, with menus
+                for everyone including you furbaby!
+                </b>
+                <br/><br/>
+                <p class="vision_p">We invite you to</p>
+                <ul class="vision_list">
+                    <li class="bullet_point">Treat your 4-legged part of the family to a nutritious breaky, brunch or lunch</li>
+                    <li class="bullet_point">Make new friends for you and your fur baby in a safe and friendly environment</li>
+                    <li class="bullet_point">Experience personalised service where you and your family are our family</li>
+                    <li class="bullet_point">Interested in adopting a real food lifestyle in your home? Let us show you how</li>
+                    <li class="bullet_point">Check out Eco friendly products for your dog</li>
+                    <li class="bullet_point">Try our exclusive Time 4 Paws home cooked ‘real’ dry food for your fury friend.</li>
+                    <li class="bullet_point">Incorporate Paleo/LCHF lifestyle into your household</li>
+                    <li class="bullet_point">Be amongst like minded people</li>
+                <br/>
+                <p class="vision_p">
+                    Don’t have a furbaby?
+                </p>
+                <p class="vision_p">
+                    Come experience great service great atmosphere and get your 4 legged fur fix! After all everyone needs to take ‘Time 4 Paws’
+                </p>
+            </article>  
+            <img src="/images/paws/bleaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf2">       
+        </section>
+    </main>
 @stop
 
 @section('_footer')

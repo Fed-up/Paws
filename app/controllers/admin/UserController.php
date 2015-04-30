@@ -24,7 +24,11 @@ class Admin_UserController extends BaseController {
 		//dd($input);
 		$rules = array(
 			'fname' => 'required',
-			'email' => 'required|email|unique:users,email,'.Input::get('id'),
+			'lname' => 'required',
+			// 'username' => 'required|unique:user,username,',
+			'email' => 'required|email|unique:users,email,',
+			'password' => 'required|min:6',
+			'password_match' => 'required|min:6|same:password',
 		);
 		
 		$validator = Validator::make($input, $rules);
@@ -37,10 +41,14 @@ class Admin_UserController extends BaseController {
 			$data	= new User();
 			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
 			$data->fname 	= Input::get('fname');
-			$data->user_type 	= "GUEST";
-			$data->active  = 1;	
+			$data->lname 	= Input::get('lname');
+			$data->username 	= Input::get('username');
+			$data->email 	= Input::get('email');
+			$data->password 	= Hash::make(Input::get('password'));
+			$data->user_type 	= Input::get('user_type');
+			$data->active  = (Input::get('active')) ? 1 : 0;	
 			$data->save();
-			//echo '<pre>'; print_r($data); echo '</pre>'; 	exit;	
+			// echo '<pre>'; print_r($data); echo '</pre>'; 	exit;	
 		}; 
 		
 		//$data = User::all();	
@@ -67,8 +75,6 @@ class Admin_UserController extends BaseController {
 			'lname' => 'required',
 			'username' => 'required',
 			'email' => 'required|email|unique:users,email,'.Input::get('id'),
-			//'password' => 'required|min:6',
-			//'password_match' => 'required|min:6|same:password',
 		);
 		
 		if (Input::get('password')) {

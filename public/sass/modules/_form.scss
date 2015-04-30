@@ -209,13 +209,16 @@ input:-webkit-autofill {
 
 
 
-
 .form__title--signup{
-    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-family: paws_base_font;
     text-align: center;
     color: #fff;
-    font-weight: 700;
-    font-size: x-large;
+    font-weight: 100;
+    font-size: 30px;
+    @media #{$medium-up} { 
+        padding-bottom: 1rem;   
+    }
+
 }
 
 .form_field_title{
