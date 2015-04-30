@@ -446,6 +446,8 @@ class CateringController  extends BaseController {
 		$validator = Validator::make($input, $rules);
 		
 		if($validator->fails()){
+			$errors = $validator->messages();
+			// echo '<pre>'; print_r($errors); echo '</pre>';exit;
 			return Redirect::back()
 				->withErrors($validator)
 				->withInput($input);
@@ -456,7 +458,7 @@ class CateringController  extends BaseController {
 			
 			if(Auth::user()){
 				$user = Auth::user();
-				// echo '<pre>'; print_r($user); echo '</pre>';exit;
+				
 			}else{
 				$user_id = 0;
 			}

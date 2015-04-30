@@ -11,7 +11,7 @@ class HomeController extends BaseController {
 		$input = Input::all();	
 
 		$fname = $input['fname'];
-		// $email = $input['email'];
+		$email = $input['email'];
 
 		$rules = array(
 			'fname' => 'required',
@@ -23,13 +23,16 @@ class HomeController extends BaseController {
 		if($validator->fails()){
 
 			// get the error messages from the validator
-        	$errors = $validator->messages();
+        	$issues = $validator->messages();
         	// echo '<pre>'; print_r($errors); echo '</pre>'; 	exit;
 
-			return Redirect::back()	
+			return View::make('public.index')	
 				->withInput($input)
 				->withErrors($validator);
-
+				// ->with(array(
+				// 	'issue' => $issues,
+				// 	)
+				// );
 
 		}else{
 

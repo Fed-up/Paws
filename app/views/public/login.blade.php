@@ -10,7 +10,7 @@
     <div class="container row section__login"> <!--Sign up section-->
         <section class="columns small-12 medium-8 medium-push-2 large-8 large-push-2 xlarge-6 xlarge-push-3">
             <div class="section section--form" >
-            	{{ Form::open(array('url' => 'login', 'class' => 'form-signin')) }}
+                {{ Form::open(array('action' => 'AuthController@postLogin', 'class' => 'form-horizontal')) }} 
                 	<h2 class="content__title--login">Please Login</h2>    
                     <div class="form__input--side--login">
                         {{ Form::label('email', 'Email: ', array('class' => 'content-title--sub')) }}

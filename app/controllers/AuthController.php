@@ -26,11 +26,23 @@ class AuthController extends BaseController {
 			'email' 		=> 'required',
 			'password'	=> 'required'
 		);
+		
 		$validator = Validator::make($input, $rules);
 		
 		if($validator->fails()){
-			return Redirect::to('login')
-				->withErrors($validator);	
+
+			// get the error messages from the validator
+        	$issues = $validator->messages();
+        	// echo '<pre>'; print_r($errors); echo '</pre>'; 	exit;
+
+			return View::make('admin.login')	
+				->withInput($input)
+				->withErrors($validator);
+				// ->with(array(
+				// 	'issue' => $issues,
+				// 	)
+				// );
+
 		}else{
 			$credentials = array(
 				'email' =>	$input['email'],

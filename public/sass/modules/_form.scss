@@ -204,7 +204,14 @@ input:-webkit-autofill {
 
 
 
+
+
+
+
+
+
 .form__title--signup{
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
     text-align: center;
     color: #fff;
     font-weight: 700;
@@ -222,11 +229,19 @@ input:-webkit-autofill {
   padding: 0.7rem;
   border-radius: 5px;
   background-color: #fff;
-  border: 0px;
-  /*width: 80%;*/
-  border: 1px solid $main_light;
-  /*margin-right: 20rem;*/
-  /*margin-bottom: 1rem; */
+  /*box-shadow: 0px 10px 10px -10px black;*/
+}
+
+
+.input__text::-webkit-input-placeholder { color:$error; opacity: 1; }
+.input__text::-moz-placeholder { color:$error; opacity: 1;} /* firefox 19+ */
+.input__text:-ms-input-placeholder { color:$error; opacity: 1;} /* ie */
+input:-moz-placeholder { color:$error; opacity: 1;}
+
+input.input__text { background: white; opacity: 0.5; }
+input.input__text:focus { opacity: 0.9; border: 0; border: 1px solid #e0e0e0;}
+input.input__text--error{
+    opacity: 0.9;
 }
 
 /* line 28, C:/webroot/lcsnbn/sass/modules/signup */
@@ -254,25 +269,6 @@ input:-webkit-autofill {
 }
 
 .form__image__submit{
-    padding: 0.8rem;
-    background-color: #ff8e5e;
-    border: 0;
-    border-radius: 0.2rem;
-    font-size: 1.1rem;
-    color: #fff; 
-    position: absolute;
-    bottom:3rem;
-    right:0;
-    background: url(/images/paws/logo100.png) no-repeat 0 0;
-    height: 100px;
-    width:140px;
-    @media #{small-only}{
-        position: static;
-        bottom:0rem;    
-    }
-}
-
-.form__image__submit{
     padding:.8rem;
     border:0;
     border-radius:.2rem;
@@ -281,8 +277,8 @@ input:-webkit-autofill {
     position:absolute;
     bottom:3rem;
     right:0;
-    background:url(/images/paws/logo100.png) no-repeat 0 0;
-    height:100px;
+    background:url(/images/paws/siwant.png) no-repeat 0 0;
+    height:120px;
     width:140px;
     @media #{$small-only}{
         position:static;

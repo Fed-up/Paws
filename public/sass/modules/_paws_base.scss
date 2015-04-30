@@ -1,3 +1,10 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
 .video__home{
 	@media #{$small-only} { 
 		background-color: $main_dark;
@@ -56,7 +63,7 @@ video#bgvid {
 }*/
 .section__white--form{
 	position: absolute;
-	top: 9rem;
+	top: 7rem;
 	/* background-color: #fff; */
 	padding: 1rem;
 	/* width: 100%; */
@@ -67,30 +74,45 @@ video#bgvid {
   	}
 
   	@media #{$xlarge-up} { 
-  		top: 25rem;
+  		top: 22rem;
   		/*background-color: green;*/
   	}
 
 }
  
 .section__white--homepage{
+	font-family: paws_heading;
+	color: $main_dark;
+	font-size: 2.3rem;
 	background-color: #fff;
-	padding-top: 7rem;
+	padding-top: 9rem;
 	padding-left: 1rem;
 	padding-right: 2rem;
 	padding-bottom:5rem;
 	text-align: center;
 	@media #{$medium-up} { 
   		padding:5rem;
+  		font-size: 3.1rem;
+  	}
+  	@media #{$large-up} { 
+  		padding:5rem;
+  		font-size: 6.2rem;
+  	}
+  	@media #{$xlarge-up} { 
+  		padding:5rem;
+  		font-size: 8.3rem;
+  	}
+  	@media #{$xxlarge-up} { 
+  		padding:5rem;
+  		font-size: 10rem;
   	}
 }
-
 .section__mission{
 	padding-top:3rem;
 	padding-bottom:3rem;
 	text-align:center;
 	font-size:18px;
-	background-color:#87cdac;
+	background-color:$main_color;
 	color:#fff;
 	@media #{$small-only} { 
   		font-size:22px;
@@ -100,4 +122,14 @@ video#bgvid {
 .error_message {
   font-size: 80%;
   color: #ff7c81;
+}
+
+.video__link{
+	color: $text;
+  	position: fixed;
+  	bottom: 1rem;
+  	right: 1rem;
+}
+.video__link:hover{
+	color: $main_dark;
 }

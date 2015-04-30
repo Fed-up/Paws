@@ -28,7 +28,7 @@ class UserProfileController extends BaseController {
 		if($validator->fails()){
 
 			// get the error messages from the validator
-        	// $errors = $validator->messages();
+        	$issue = $validator->messages();
         	
    //      	if ( ! empty( $errors ) ) {
 			//     foreach ( $errors->all() as $error ) {
@@ -40,8 +40,8 @@ class UserProfileController extends BaseController {
 
 			return Redirect::back()	
 				->withInput($input)
-				->withErrors($validator->messages());
-
+				->withErrors($validator);
+				
 
 		}else{
 
