@@ -36,6 +36,14 @@
   font-style: normal; }
   $headings: headings;
 
+  @font-face {
+  font-family: 'paws_base_font';
+  src: url('/fonts/poetsenone-regular-webfont.eot');
+  src: url('/fonts/poetsenone-regular-webfont.eot') format('embedded-opentype'), url('/fonts/poetsenone-regular-webfont.woff') format('woff'), url('/fonts/poetsenone-regular-webfont.ttf') format('truetype'), url('/fonts/poetsenone-regular.ttf') format('truetype'), url('/fonts/poetsenone-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+  $headings: headings;
+
 [class^="icon-"], [class*=" icon-"] {
   font-family: 'icomoon';
   speak: none;

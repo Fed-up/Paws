@@ -17,9 +17,7 @@
             <thead>
             	<tr>
                     <th>#</td>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Username</th>
+                    <th>Full name</th>
                     <th>Email</th>
                     <th>User Type</th>
                     <th>Active</th>
@@ -32,8 +30,6 @@
             <tr>
                 <td>{{ $member->id }}</td>
                 <td>{{ $member->fname }}</td>
-                <td>{{ $member->lname }}</td>
-                <td>{{ $member->username }}</td>
                 <td>{{ $member->email }}</td>
                 <td>{{ $member->user_type }}</td>
                 <td>

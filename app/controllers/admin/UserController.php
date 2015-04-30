@@ -44,7 +44,7 @@ class Admin_UserController extends BaseController {
 		}; 
 		
 		//$data = User::all();	
-		return Redirect::action('HomeController@getIndex');
+		return Redirect::action('Admin_UserController@getMembers');
 			//->with(array('data' => $data));
 	}
 	

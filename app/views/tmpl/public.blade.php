@@ -6,14 +6,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-    	<title>{{ $title or "Paws" }}</title>
+    	<title>{{ $title or "Time 4 Paws" }}</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
       @yield('_header')
       <!-- Dev site css --> 
-      <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css"> 
+      <!-- <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css">  -->
       
       <!-- Live site css  -->
-      <!-- <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css">  -->
+      <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css"> 
 
 
       <link rel="stylesheet" type="text/css" href="/packages/jquery-1.11.1.min/vendor/jquery-ui-1.10.4.custom/css/no-theme/jquery-ui-1.10.4.custom.min.css"/>
@@ -41,14 +41,13 @@
       class="panel--right"> <!-- //panel -->
         <div id="navigation" class="">
             <nav class="">
-                
                 <!-- <a class="side--nav" href="/">{{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile') : HTML::link('profile', 'Profile'))) }}</a> -->
                 {{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile', array('class' => 'side--nav')) : HTML::link('profile', 'Profile', array('class' => 'side--nav')))) }}
                 <a class="{{((Request::segment(1) === 'collections')? 'side--nav navTab_active' : 'side--nav')}}" href="/">Home</a>
-                <a class="{{((Request::segment(1) === 'recipes')? 'side--nav navTab_active' : 'side--nav')}}" href="/#mission">Our Vision</a>
-                <a class="{{((Request::segment(1) === 'ingredients')? 'side--nav navTab_active' : 'side--nav')}}" href="/#">About Us</a>
+                <a class="{{((Request::segment(1) === 'ingredients')? 'side--nav navTab_active' : 'side--nav')}}" href="http://www.muppettraining.com/#mission">Our Mission</a>                
+                <a class="{{((Request::segment(1) === 'recipes')? 'side--nav navTab_active' : 'side--nav')}}" href="http://www.muppettraining.com/#vision">Our Vision for you</a>
                 <a class="{{((Request::segment(1) === 'events')? 'side--nav navTab_active' : 'side--nav')}}" href="/">Sign Up</a>
-                <a class="video__link" href="www.dogloversshow.com.au">Video Credit: Dog Lovers Show</a>
+                <a class="video__link" href="http://www.dogloversshow.com.au">Video Credit: Dog Lovers Show</a>
             </nav>
         </div>
 
