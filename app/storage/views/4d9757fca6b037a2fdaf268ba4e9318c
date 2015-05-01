@@ -12,7 +12,7 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-			<li><a href="#"> HI <?php echo Auth::user()->username; ?></a></li>
+			<li><a href="#"> HI <?php echo Auth::user()->fname; ?></a></li>
             <li><?php echo HTML::link('/', 'Homepage'); ?></li>
             <li><a href="/admin/user/members">Users</a></li>
           </ul>

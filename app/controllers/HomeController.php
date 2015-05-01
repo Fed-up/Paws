@@ -47,8 +47,9 @@ class HomeController extends BaseController {
 		}; 
 
 		//$data = User::all();	
-		return Redirect::action('HomeController@getIndex');
-			//->with(array('data' => $data));
+		$registered = 'Thankyou for showing your interest! We cannot wait to see you there!';
+		return View::make('public.index')
+			->with(array('registered' => $registered));	
 	}
 
 

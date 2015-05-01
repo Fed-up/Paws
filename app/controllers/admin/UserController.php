@@ -22,6 +22,7 @@ class Admin_UserController extends BaseController {
 	public function postAddMembers(){
 		$input = Input::all();
 		//dd($input);
+		$admin = 0;
 		$rules = array(
 			'fname' => 'required',
 			'lname' => 'required',
@@ -38,15 +39,22 @@ class Admin_UserController extends BaseController {
 				->withErrors($validator)
 				->withInput($input);
 		}else{
+
+			if(Input::get('user_type') == 'ADMIN'){
+				
+				$admin = 1;
+			}
+			;
 			$data	= new User();
-			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
-			$data->fname 	= Input::get('fname');
-			$data->lname 	= Input::get('lname');
+			
+			$data->fname 		= Input::get('fname');
+			$data->lname 		= Input::get('lname');
 			$data->username 	= Input::get('username');
-			$data->email 	= Input::get('email');
+			$data->email 		= Input::get('email');
 			$data->password 	= Hash::make(Input::get('password'));
 			$data->user_type 	= Input::get('user_type');
-			$data->active  = (Input::get('active')) ? 1 : 0;	
+			$data->admin 		= $admin;
+			$data->active  		= (Input::get('active')) ? 1 : 0;	
 			$data->save();
 			// echo '<pre>'; print_r($data); echo '</pre>'; 	exit;	
 		}; 
@@ -70,10 +78,11 @@ class Admin_UserController extends BaseController {
 	public function postUpdateMembers(){
 		$input = Input::all();
 		//dd($input);
+		$admin = 0;
 		$rules = array(
 			'fname' => 'required',
 			'lname' => 'required',
-			'username' => 'required',
+			// 'username' => 'required',
 			'email' => 'required|email|unique:users,email,'.Input::get('id'),
 		);
 		
@@ -89,6 +98,10 @@ class Admin_UserController extends BaseController {
 				->withErrors($validator)
 				->withInput($input);
 		}else{
+			if(Input::get('user_type') == 'ADMIN'){
+				$admin = 1;
+			}
+			// echo '<pre>'; print_r($admin); echo '</pre>'; 	exit;
 			$data = User::findOrFail($input['id']);
 			//echo '<pre>'; print_r($input); echo '</pre>'; 	exit;
 			$data->fname 	= Input::get('fname');
@@ -99,6 +112,7 @@ class Admin_UserController extends BaseController {
 				$data->password 	= Hash::make(Input::get('password'));
 			};
 			$data->user_type 	= Input::get('user_type');
+			$data->admin 		= $admin;
 			$data->active  = (Input::get('active')) ? 1 : 0;
 			$data->save();
 

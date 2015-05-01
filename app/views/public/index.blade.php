@@ -12,32 +12,39 @@
         </div>
         <div id="vidpause"></div>
         <section class="columns small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3 section__white--form">
-            {{ Form::open(array('action' => 'HomeController@postAddUser', 'class' => 'form-horizontal')) }} 
-                <h2 class="form__title--signup">Dog Cafe soon to Melbourne..</h2> 
+            @if (isset($message))
+               <div class="message__alert">{{ $message }}</div>
+            @endif
+            @if (isset($registered))
+                <div class="registered__message">{{ $registered }}</div>
+            @else
+                {{ Form::open(array('action' => 'HomeController@postAddUser', 'class' => 'form-horizontal')) }} 
+                    <h2 class="form__title--signup">Dog Cafe soon to Melbourne..</h2> 
 
-                <div class="form-group {{ ($errors->has('fname')) ? 'has-error' : '' ; }} row">
-                    {{ Form::label('fname', 'Full Name: ', array('class' => ' form_field_title ')) }}
-                    <div class=""> 
-                        {{ Form::text('fname', (isset($input['fname'])? Input::old('fname') : (isset($data->fname)? $data->fname : '' )), array('class' => ($errors->has('fname'))? 'columns small-12 medium-8 input__text input__text--error' : 'columns small-12 medium-8 input__text', 'placeholder' => ($errors->has('fname'))? $errors->first('fname') : '' )) }} 
+                    <div class="form-group {{ ($errors->has('fname')) ? 'has-error' : '' ; }} row">
+                        {{ Form::label('fname', 'Full Name: ', array('class' => ' form_field_title ')) }}
+                        <div class=""> 
+                            {{ Form::text('fname', (isset($input['fname'])? Input::old('fname') : (isset($data->fname)? $data->fname : '' )), array('class' => ($errors->has('fname'))? 'columns small-12 medium-8 input__text input__text--error' : 'columns small-12 medium-8 input__text', 'placeholder' => ($errors->has('fname'))? $errors->first('fname') : '' )) }} 
+                        </div>
                     </div>
-                </div>
-                <div class="form-group {{ ($errors->has('email')) ? 'has-error' : '' ; }} row">
-                    {{ Form::label('email', 'Email: ', array('class' => ' form_field_title ')) }}
-                    <div class="">
-                        {{ Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => ($errors->has('email'))? 'columns small-12 medium-8 input__text input__text--error' : 'columns small-12 medium-8 input__text', 'placeholder' => ($errors->has('email'))? $errors->first('email') : '' )) }}  
+                    <div class="form-group {{ ($errors->has('email')) ? 'has-error' : '' ; }} row">
+                        {{ Form::label('email', 'Email: ', array('class' => ' form_field_title ')) }}
+                        <div class="">
+                            {{ Form::text('email', (isset($input['email'])? Input::old('email') : (isset($data->email)? $data->email : '' )), array('class' => ($errors->has('email'))? 'columns small-12 medium-8 input__text input__text--error' : 'columns small-12 medium-8 input__text', 'placeholder' => ($errors->has('email'))? $errors->first('email') : '' )) }}  
+                        </div>
+                    </div>  
+     
+           
+                
+                    <div class="form__buttons">
+                        {{ Form::submit('', array('class' => 'form__image__submit')) }}
                     </div>
-                </div>  
- 
-       
-            
-                <div class="form__buttons">
-                    {{ Form::submit('', array('class' => 'form__image__submit')) }}
-                </div>
 
-                <!-- <div class="form-group">
-                    {{ Form::submit('', array('class' => 'form__image__submit form__image__submit--small')) }}
-                </div> -->
-            {{ Form::close() }}         
+                    <!-- <div class="form-group">
+                        {{ Form::submit('', array('class' => 'form__image__submit form__image__submit--small')) }}
+                    </div> -->
+                {{ Form::close() }} 
+            @endif        
         </section>
         <section class="section__white--homepage row">
             <img src="/images/paws/s2leaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf1">
@@ -72,6 +79,13 @@
             <img src="/images/paws/logo300.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-medium-only" style="width: 300px;  margin: auto;">
             <img src="/images/paws/logo400.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-large-up" style="width: 400px;  margin: auto;">
             <!-- <p>Where real food comes to life</p> -->
+        </section>
+        <section id="fs" class="section__facebook row">
+            <img src="/images/paws/s2leaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf1">
+            <a id="fl" href="https://www.facebook.com/pages/Time-4-Paws/341349089397253?fref=ts" class="facebook__link">
+                
+                Check us out on facebook
+            </a>
         </section>
         <section id="vision"class="section__vision">
             <article class="small-12 medium-10 medium-push-1 large-8 large-push-2 xlarge-6 xlarge-push-3">

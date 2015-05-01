@@ -10,10 +10,10 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" > 
       @yield('_header')
       <!-- Dev site css --> 
-      <!-- <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css">  -->
+      <link rel="stylesheet" type="text/css" href="../sass/compiled_css/dev_paws.css"> 
       
-      <!-- Live site css  -->
-      <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css"> 
+      <!-- Live site css  --> 
+      <!-- <link rel="stylesheet" type="text/css" href="../deploy_css/paws.min.css">  -->
 
 
       <link rel="stylesheet" type="text/css" href="/packages/jquery-1.11.1.min/vendor/jquery-ui-1.10.4.custom/css/no-theme/jquery-ui-1.10.4.custom.min.css"/>
@@ -23,7 +23,7 @@
   <body>
     
     <!-- <header class="header"> -->
-      @include('public.header')
+      @include('public.header') 
     <!-- </header> -->
 
     <div class="content-slot">
@@ -42,7 +42,7 @@
         <div id="navigation" class="">
             <nav class="">
                 <!-- <a class="side--nav" href="/">{{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile') : HTML::link('profile', 'Profile'))) }}</a> -->
-                {{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Profile', array('class' => 'side--nav')) : HTML::link('profile', 'Profile', array('class' => 'side--nav')))) }}
+                {{ ((Auth::guest())? '' : ((Auth::user()->admin == 1)? HTML::link('admin', 'Admin', array('class' => 'side--nav')) : '')) }}
                 <a class="{{((Request::segment(1) === 'collections')? 'side--nav navTab_active' : 'side--nav')}}" href="/">Home</a>
                 <a class="{{((Request::segment(1) === 'ingredients')? 'side--nav navTab_active' : 'side--nav')}}" href="http://www.time4paws.com.au/#mission">Our Mission</a>                 
                 <a class="{{((Request::segment(1) === 'recipes')? 'side--nav navTab_active' : 'side--nav')}}" href="http://www.time4paws.com.au/#vision">Our Vision for you</a>

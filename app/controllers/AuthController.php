@@ -8,7 +8,7 @@ class AuthController extends BaseController {
 	
 	public function getLogin(){
 		
-		if (Auth::user()) return Redirect::to('/admin');
+		// if (Auth::user()) return Redirect::to('/admin');
 				
 		//$password = Hash::make('727887');
 		//$decrypt = Hash::check('727887', $password);
@@ -63,13 +63,13 @@ class AuthController extends BaseController {
 						return Redirect::to('admin');
 						break;
 					case 'B2B':
-						return Redirect::to('profile');
+						return $this->_doLogout();
 						break;
 					case 'REGISTERED':
-						return Redirect::to('profile');
+						return $this->_doLogout();
 						break;
 					case 'GUEST':
-						return Redirect::to('profile');
+						return $this->_doLogout();
 						break;
 					default:
 						return $this->_doLogout();
@@ -87,10 +87,16 @@ class AuthController extends BaseController {
 	}
 	
 	private function _doLogout() {
-		Auth::logout();
-		return Redirect::to('/');
+		$user = Auth::user();
+        Auth::logout($user);
+
+		// echo '<pre>'; print_r(Auth::user()->email); echo '</pre>';exit;
+		Session::flush();
+		$message = 'Logged Out Successfully';
+		return View::make('public.index')
+			->with(array('message' => $message));	
 	}
 	
-	
+	// DBbwIFRZFAlUVDtdK0hLx4gmWHZiawb8VLS8wL1qIKa3UUQe4erHGjMcdrEP
 	
 }
