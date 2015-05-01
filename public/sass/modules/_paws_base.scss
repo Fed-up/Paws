@@ -172,6 +172,7 @@ video#bgvid {
 
 .section__facebook{
 	/*position: relative;*/
+	margin: 0rem;
 	font-family: paws_heading;
 	color: $main_color;
 	font-size: 2.3rem;
@@ -237,7 +238,8 @@ video#bgvid {
 	padding-left: 1rem;
 	padding-right: 1rem;
 	padding-bottom:5rem;
-/*	text-align: center;*/
+	/*text-align: center;*/
+	color: $main_color;
 	@media #{$medium-up} { 
   		/*padding:5rem;*/
   		font-size: 3.1rem;

@@ -3273,6 +3273,7 @@ input:focus, select:focus, textarea:focus, button:focus {
 /* line 173, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .section__facebook {
   /*position: relative;*/
+  margin: 0rem;
   font-family: paws_heading;
   color: #87cdac;
   font-size: 2.3rem;
@@ -3300,30 +3301,30 @@ input:focus, select:focus, textarea:focus, button:focus {
       padding: 5rem;
       font-size: 10rem; } }
 
-/* line 203, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 204, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .vision_p {
   text-align: center; }
 
-/* line 207, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 208, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .leaf1 {
   position: absolute;
   bottom: 1rem;
   left: 0;
   margin: 0; }
 
-/* line 214, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 215, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .leaf2 {
   position: absolute;
   bottom: 0;
   right: 2rem; }
 
-/* line 220, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 221, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .leaf3 {
   position: absolute;
   right: 0;
   bottom: -9rem; }
 
-/* line 226, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 227, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .registered__message {
   font-family: paws_base_font;
   color: #fff;
@@ -3332,13 +3333,14 @@ input:focus, select:focus, textarea:focus, button:focus {
   padding: 1rem;
   font-size: 28px; }
 
-/* line 235, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 236, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 .facebook__link {
   padding-top: 5rem;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-bottom: 5rem;
-  /*	text-align: center;*/ }
+  /*text-align: center;*/
+  color: #87cdac; }
   @media only screen and (min-width:481px) {
     .facebook__link {
       /*padding:5rem;*/
@@ -3356,11 +3358,11 @@ input:focus, select:focus, textarea:focus, button:focus {
       /*padding:5rem;*/
       font-size: 10rem; } }
 
-/* line 259, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 261, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 #fs:hover {
   background-color: #3b5998; }
 
-/* line 260, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
+/* line 262, C:/GitHub/Paws/public/sass/modules/_paws_base.scss */
 #fs:hover #fl {
   color: white; }
 

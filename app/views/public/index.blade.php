@@ -46,7 +46,7 @@
                 {{ Form::close() }} 
             @endif        
         </section>
-        <section class="section__white--homepage row">
+        <section class="section__white--homepage">
             <img src="/images/paws/s2leaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf1">
             <p>Where real food comes to life</p>
         </section>
@@ -56,7 +56,7 @@
                 <p class="">
                 We are creating a dog friendly ‘real food’
                 cafe, that is passionate about providing 
-                nutritious, organic, locally sourced cuisine
+                nutritious, organic, locally sourced cuisine  
                 </p>
                 <br/>
                 <p class="">
@@ -74,13 +74,13 @@
                 </p>
             </article>         
         </section>
-        <section class="section__white--homepage row">
+        <section class="section__white--homepage ">
             <img src="/images/paws/logo200.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-small-only" style="width: 200px;  margin: auto;">
             <img src="/images/paws/logo300.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-medium-only" style="width: 300px;  margin: auto;">
             <img src="/images/paws/logo400.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="show-for-large-up" style="width: 400px;  margin: auto;">
             <!-- <p>Where real food comes to life</p> -->
         </section>
-        <section id="fs" class="section__facebook row">
+        <section id="fs" class="section__facebook">
             <img src="/images/paws/s2leaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf1">
             <a id="fl" href="https://www.facebook.com/pages/Time-4-Paws/341349089397253?fref=ts" class="facebook__link">
                 
