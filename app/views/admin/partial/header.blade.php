@@ -15,6 +15,7 @@
 			<li><a href="#"> HI {{ Auth::user()->fname }}</a></li>
             <li>{{ HTML::link('/', 'Homepage') }}</li>
             <li><a href="/admin/user/members">Users</a></li>
+            <li><a href="/logout">Logout</a></li>
           </ul>
         </div>
       </div>

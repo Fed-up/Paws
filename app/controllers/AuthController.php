@@ -52,12 +52,13 @@ class AuthController extends BaseController {
 			if(Auth::attempt($credentials)){
 				//return Redirect::to('admin');
 				
-				//echo '<pre>'; print_r( Auth::user()->user_type); echo '</pre>';
+				// echo '<pre>'; print_r( Auth::user()->admin); echo '</pre>';exit;
 				//exit;
 				
 				switch (Auth::user()->user_type) {
 					case 'ADMIN':
-						return Redirect::to('admin');
+						// return Redirect::to('admin');
+						return View::make('admin.index');
 						break;
 					case 'MANAGER':
 						return Redirect::to('admin');
@@ -77,6 +78,7 @@ class AuthController extends BaseController {
 				
 					
 			}else{
+				// echo '<pre>'; print_r( Auth::user()); echo '</pre>';exit;
 				return Redirect::to('login');	
 			}
 		}	

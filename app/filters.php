@@ -39,8 +39,11 @@ Route::filter('auth', function()
 
 	if (Auth::check())
     {
-        if (!Auth::User()->admin == 1) return Redirect::guest('/');
-       	
+        if (!Auth::User()->admin == 1){
+        	return Redirect::guest('/');
+       	}else{
+       		// return View::make('admin.index');
+       	}
     }
 });
 

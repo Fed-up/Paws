@@ -60,7 +60,7 @@
                 </p>
                 <br/>
                 <p class="">
-                    We believe in the healing poswer of food
+                    We believe in the healing power of food
                     and desire to educate and inspire people 
                     to expect the best not only for themselves
                     but for our canine friends as well
@@ -68,7 +68,7 @@
                 <br/>
                 <p class="">
                     We strive to create a place where service
-                    is not only a smaile, its a place ti call a
+                    is not only a smile, its a place to call a
                     second home, a place where there
                     will always be..
                 </p>
@@ -109,7 +109,7 @@
                     Don’t have a furbaby?
                 </p>
                 <p class="vision_p">
-                    Come experience great service great atmosphere and get your 4 legged fur fix! After all everyone needs to take ‘Time 4 Paws’
+                    Come experience great service, great atmosphere and get your 4 legged fur fix =) After all everyone needs to take ‘Time 4 Paws’
                 </p>
             </article>  
             <img src="/images/paws/bleaf.png" alt="Where Real food comes to life" name="Where Real food comes to life" class="leaf2">       
