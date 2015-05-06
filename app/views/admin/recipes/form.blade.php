@@ -426,7 +426,7 @@
 				silverlight_xap_url : '/packages/jquery-1.11.1.min/vendor/jquery-ui-1.10.4.custom/js/Moxie.xap',
 				
 				filters : {
-					max_file_size : '200mb',
+					max_file_size : '1mb',
 					mime_types: [
 						{title : "Image files", extensions : "jpg,jpeg"},
 					]
