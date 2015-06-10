@@ -93,16 +93,15 @@
                 A cafe that welcomes the ENTIRE family, with menus
                 for everyone including you furbaby!
                 </b>
-                <br/><br/>
+                <br/><br/> 
                 <p class="vision_p">We invite you to</p>
                 <ul class="vision_list">
                     <li class="bullet_point">Treat your 4-legged part of the family to a nutritious breaky, brunch or lunch</li>
                     <li class="bullet_point">Make new friends for you and your fur baby in a safe and friendly environment</li>
                     <li class="bullet_point">Experience personalised service where you and your family are our family</li>
-                    <li class="bullet_point">Interested in adopting a real food lifestyle in your home? Let us show you how</li>
+                    <li class="bullet_point">Get inspired to live real food lifestyle in your home</li>
                     <li class="bullet_point">Check out Eco friendly products for your dog</li>
                     <li class="bullet_point">Try our exclusive Time 4 Paws home cooked ‘real’ dry food for your fury friend.</li>
-                    <li class="bullet_point">Incorporate Paleo/LCHF lifestyle into your household</li>
                     <li class="bullet_point">Be amongst like minded people</li>
                 <br/>
                 <p class="vision_p">
